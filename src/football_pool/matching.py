@@ -63,6 +63,30 @@ MIN_TEAM_SCORE = 0.72  # below this, a name is not considered a match at all
 MIN_MARGIN = 0.08  # best candidate must beat the runner-up by this much
 
 
+# A parenthetical holding a digit is a spread -- "(-6.5)". One without a digit
+# is part of the name -- "Miami (OH)" -- and must survive.
+_SPREAD_PAREN = re.compile(r"\((?=[^)]*\d)[^)]*\)")
+_TIEBREAK_PREFIX = re.compile(r"^\s*total\s*points\s*[-:\u2013\u2014]\s*", re.I)
+
+
+def split_matchup(raw_text: str) -> tuple[str, str] | None:
+    """Pull (away, home) out of a slate line, keeping the sheet's own wording.
+
+    The commissioner's spelling is what goes back to them, so this preserves it
+    verbatim rather than substituting ESPN's -- which writes Hawaii as
+    "Hawai'i" and Ole Miss as "Ole Miss Rebels".
+    """
+    if not raw_text:
+        return None
+    text = _TIEBREAK_PREFIX.sub("", raw_text)
+    text = _SPREAD_PAREN.sub("", text)
+    if "@" not in text:
+        return None
+    away, home = text.split("@", 1)
+    away, home = away.strip(), home.strip()
+    return (away, home) if away and home else None
+
+
 def normalize(text: str) -> str:
     """Fold a team name to a comparable form.
 

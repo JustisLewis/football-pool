@@ -163,6 +163,8 @@ def _resolve_game(conn, index, game, slot, args, problems) -> dict | None:
         "pool_line": pool_line,
         "is_tiebreaker": int(game.is_tiebreaker),
         "raw_text": game.raw_text,
+        "away_text": game.away,
+        "home_text": game.home,
         "source_image": None,
     }
 
@@ -572,6 +574,53 @@ def cmd_record(args) -> int:
     return 0
 
 
+def cmd_export(args) -> int:
+    """Print the week's picks as plain lines, ready to send to the commissioner."""
+    conn = db.connect(args.db)
+    season, week = resolve_week(args)
+    rows = db.slate_for_week(conn, season, week)
+    if not rows:
+        die(f"no slate stored for {season} week {week}. Run:  ./fp import")
+
+    lines, missing = [], []
+    for row in rows:
+        if row["is_tiebreaker"]:
+            continue
+        if not row["picked_side"]:
+            missing.append(f"{row['slot']}. {row['away_abbr']} @ {row['home_abbr']}")
+            lines.append("(no pick)")
+            continue
+        lines.append(_picked_name(row))
+
+    tiebreak = db.get_tiebreaker(conn, season, week)
+    has_tiebreak_game = any(r["is_tiebreaker"] for r in rows)
+    if tiebreak:
+        lines.append(f"{tiebreak['predicted_total']} points")
+    elif has_tiebreak_game:
+        missing.append("tiebreaker (./fp tiebreak <points>)")
+        lines.append("(no total)")
+
+    if missing and not args.allow_missing:
+        die(
+            "not ready to send -- still missing:\n  "
+            + "\n  ".join(missing)
+            + "\nFinish with ./fp pick -i, or pass --allow-missing to print anyway."
+        )
+    for line in missing:
+        warn(f"warning: missing {line}")
+
+    out("\n".join(lines))
+    return 0
+
+
+def _picked_name(row) -> str:
+    """The picked team, named the way the commissioner's sheet named it."""
+    side = row["picked_side"]
+    sheet_name = row["away_text"] if side == "away" else row["home_text"]
+    fallback = row["away_name"] if side == "away" else row["home_name"]
+    return sheet_name or fallback or row["picked_abbr"]
+
+
 def cmd_dashboard(args) -> int:
     from . import dashboard
 
@@ -641,6 +690,16 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("record", help="season summary")
     p.add_argument("--season", type=int)
     p.set_defaults(func=cmd_record)
+
+    p = add_week_args(
+        sub.add_parser("export", help="print picks as plain text to send in")
+    )
+    p.add_argument(
+        "--allow-missing",
+        action="store_true",
+        help="print even if some picks are not made yet",
+    )
+    p.set_defaults(func=cmd_export)
 
     p = add_week_args(sub.add_parser("dashboard", help="build the HTML dashboard"))
     p.add_argument("-o", "--output", help="output path (default dashboard.html)")

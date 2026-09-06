@@ -39,6 +39,8 @@ CREATE TABLE IF NOT EXISTS slate_games (
     pool_line     REAL,               -- home-relative; authoritative for grading
     is_tiebreaker INTEGER DEFAULT 0,
     raw_text      TEXT,
+    away_text     TEXT,   -- team names as the commissioner wrote them
+    home_text     TEXT,
     source_image  TEXT,
     PRIMARY KEY (season, week, espn_id)
 );
@@ -85,12 +87,47 @@ def connect(path: Path | str | None = None) -> sqlite3.Connection:
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
     conn.executescript(SCHEMA)
+    _migrate(conn)
     conn.execute(
         "INSERT OR IGNORE INTO meta (key, value) VALUES ('schema_version', ?)",
         (str(SCHEMA_VERSION),),
     )
     conn.commit()
     return conn
+
+
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Bring an existing database up to the current schema.
+
+    CREATE TABLE IF NOT EXISTS silently leaves older tables alone, so new
+    columns have to be added explicitly.
+    """
+    columns = {r["name"] for r in conn.execute("PRAGMA table_info(slate_games)")}
+    added = [c for c in ("away_text", "home_text") if c not in columns]
+    for column in added:
+        conn.execute(f"ALTER TABLE slate_games ADD COLUMN {column} TEXT")
+    if added:
+        _backfill_matchup_text(conn)
+    conn.commit()
+
+
+def _backfill_matchup_text(conn: sqlite3.Connection) -> None:
+    """Recover the sheet's team names from raw_text for slates already stored."""
+    from .matching import split_matchup
+
+    rows = conn.execute(
+        "SELECT season, week, espn_id, raw_text FROM slate_games "
+        "WHERE away_text IS NULL AND raw_text IS NOT NULL"
+    ).fetchall()
+    for row in rows:
+        names = split_matchup(row["raw_text"])
+        if not names:
+            continue
+        conn.execute(
+            "UPDATE slate_games SET away_text = ?, home_text = ? "
+            "WHERE season = ? AND week = ? AND espn_id = ?",
+            (*names, row["season"], row["week"], row["espn_id"]),
+        )
 
 
 # --- games ---------------------------------------------------------------
@@ -140,18 +177,32 @@ def games_for_week(conn: sqlite3.Connection, season: int, week: int) -> list[sql
 # --- slate ---------------------------------------------------------------
 
 
+# Optional slate columns, so callers only have to supply what they know.
+_SLATE_DEFAULTS = {
+    "pool_line": None,
+    "is_tiebreaker": 0,
+    "raw_text": None,
+    "away_text": None,
+    "home_text": None,
+    "source_image": None,
+}
+
+
 def replace_slate(
     conn: sqlite3.Connection, season: int, week: int, rows: list[dict]
 ) -> None:
     """Replace the stored slate for a week. Picks are preserved by design --
     re-importing a corrected slate should not wipe picks already made."""
     conn.execute("DELETE FROM slate_games WHERE season = ? AND week = ?", (season, week))
+    rows = [{**_SLATE_DEFAULTS, **row, "season": season, "week": week} for row in rows]
     conn.executemany(
         """
         INSERT INTO slate_games
-            (season, week, espn_id, slot, pool_line, is_tiebreaker, raw_text, source_image)
+            (season, week, espn_id, slot, pool_line, is_tiebreaker, raw_text,
+             away_text, home_text, source_image)
         VALUES
-            (:season, :week, :espn_id, :slot, :pool_line, :is_tiebreaker, :raw_text, :source_image)
+            (:season, :week, :espn_id, :slot, :pool_line, :is_tiebreaker, :raw_text,
+             :away_text, :home_text, :source_image)
         """,
         rows,
     )

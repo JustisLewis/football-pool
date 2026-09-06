@@ -29,12 +29,33 @@ mkdir -p slates/2026/week03          # drop the screenshot(s) in here
 ./fp pick -i                         # walk the slate, then the total-points pick
 ./fp tiebreak 52                     # or set the total-points pick on its own
 ./fp sync                            # refresh scores and grade
+./fp export | pbcopy                 # picks as plain text, ready to send in
 ./fp record                          # season summary
 ./fp dashboard                       # rebuild dashboard.html
 ```
 
 Every command defaults to the current season and week; pass `--season` /
 `--week` to work on another one.
+
+## Sending picks in
+
+`./fp export` prints one team per line, in slate order, with the total-points
+prediction last — the format the commissioner expects:
+
+```
+Georgia Tech
+Michigan State
+...
+64 points
+```
+
+Team names are echoed **as the sheet wrote them**, so the list reads
+line-for-line against what was sent out. (ESPN calls them `Hawai'i` and
+`Ole Miss Rebels`; the sheet says `Hawaii` and `Ole Miss`.)
+
+It refuses to print an incomplete list rather than quietly sending a short one.
+`--allow-missing` overrides that, marking gaps as `(no pick)`. Warnings go to
+stderr, so `./fp export | pbcopy` always copies clean.
 
 ## How grading works
 
