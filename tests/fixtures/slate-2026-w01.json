@@ -1,0 +1,21 @@
+{
+ "week_label": "WEEK ONE!!!!",
+ "games": [
+  {"away": "Colorado", "home": "Georgia Tech", "favored": "home", "spread_magnitude": 6.5, "is_tiebreaker": false, "raw_text": "Colorado @ Georgia Tech (-6.5)"},
+  {"away": "Toledo", "home": "Michigan State", "favored": "home", "spread_magnitude": 9.5, "is_tiebreaker": false, "raw_text": "Toledo @ Michigan State (-9.5)"},
+  {"away": "East Carolina", "home": "Alabama", "favored": "home", "spread_magnitude": 27.5, "is_tiebreaker": false, "raw_text": "East Carolina @ Alabama (-27.5)"},
+  {"away": "Oregon State", "home": "Houston", "favored": "home", "spread_magnitude": 20.5, "is_tiebreaker": false, "raw_text": "Oregon State @ Houston (-20.5)"},
+  {"away": "Ohio", "home": "Nebraska", "favored": "home", "spread_magnitude": 23.5, "is_tiebreaker": false, "raw_text": "Ohio @ Nebraska (-23.5)"},
+  {"away": "Miami (OH)", "home": "Pittsburgh", "favored": "home", "spread_magnitude": 16.5, "is_tiebreaker": false, "raw_text": "Miami (OH) @ Pittsburgh (-16.5)"},
+  {"away": "Tenn St", "home": "Georgia", "favored": "home", "spread_magnitude": 47.5, "is_tiebreaker": false, "raw_text": "Tenn St @ Georgia (-47.5)"},
+  {"away": "Boston College", "home": "Cincinnati", "favored": "home", "spread_magnitude": 7.5, "is_tiebreaker": false, "raw_text": "Boston College @ Cincinnati (-7.5)"},
+  {"away": "Tulane", "home": "Duke", "favored": "home", "spread_magnitude": 7.5, "is_tiebreaker": false, "raw_text": "Tulane @ Duke (-7.5)"},
+  {"away": "Baylor", "home": "Auburn", "favored": "home", "spread_magnitude": 7.5, "is_tiebreaker": false, "raw_text": "Baylor @ Auburn (-7.5)"},
+  {"away": "Arkansas St", "home": "Memphis", "favored": "unknown", "spread_magnitude": 11.5, "is_tiebreaker": false, "raw_text": "Arkansas St @ Memphis (11.5)"},
+  {"away": "Clemson", "home": "LSU", "favored": "home", "spread_magnitude": 9.5, "is_tiebreaker": false, "raw_text": "Clemson @ LSU (-9.5)"},
+  {"away": "UNLV", "home": "Hawaii", "favored": "away", "spread_magnitude": 2.5, "is_tiebreaker": false, "raw_text": "UNLV (-2.5) @ Hawaii"},
+  {"away": "UCLA", "home": "California", "favored": "away", "spread_magnitude": 1.5, "is_tiebreaker": false, "raw_text": "UCLA (-1.5) @ California"},
+  {"away": "Louisville", "home": "Ole Miss", "favored": "home", "spread_magnitude": 6.5, "is_tiebreaker": false, "raw_text": "Louisville @ Ole Miss (-6.5)"},
+  {"away": "Furman", "home": "Tennessee", "favored": "unknown", "spread_magnitude": null, "is_tiebreaker": true, "raw_text": "Total Points - Furman @ Tennessee"}
+ ]
+}

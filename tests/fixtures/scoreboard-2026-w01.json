@@ -1,0 +1,5637 @@
+{
+ "season": {
+  "type": 2,
+  "year": 2026
+ },
+ "week": {
+  "number": 1
+ },
+ "events": [
+  {
+   "id": "401858437",
+   "date": "2026-09-06T20:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_IN_PROGRESS"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -23.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "team": {
+        "id": "264",
+        "abbreviation": "WASH",
+        "displayName": "Washington Huskies",
+        "shortDisplayName": "Washington",
+        "location": "Washington",
+        "name": "Huskies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "265",
+        "abbreviation": "WSU",
+        "displayName": "Washington State Cougars",
+        "shortDisplayName": "Washington St",
+        "location": "Washington State",
+        "name": "Cougars"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858438",
+   "date": "2026-09-06T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_SCHEDULED"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": true,
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+          "rel": [
+           "light"
+          ]
+         },
+         {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+          "rel": [
+           "dark"
+          ]
+         }
+        ],
+        "displayName": "DraftKings"
+       },
+       "details": "ND -21",
+       "overUnder": 46.5,
+       "spread": -21.0,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "275",
+         "uid": "s:20~l:23~t:275",
+         "abbreviation": "WIS",
+         "name": "Badgers",
+         "displayName": "Wisconsin Badgers",
+         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "87",
+         "uid": "s:20~l:23~t:87",
+         "abbreviation": "ND",
+         "name": "Fighting Irish",
+         "displayName": "Notre Dame Fighting Irish",
+         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "-1800",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34185013%3Foutcomes%3D0ML84883859_1",
+           "text": "Home Bet",
+           "shortText": "Home Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858438,
+             "betSide": "home",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "-2400"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "+1000",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34185013%3Foutcomes%3D0ML84883859_3",
+           "text": "Away Bet",
+           "shortText": "Away Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858438,
+             "betSide": "away",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "+970"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "-21",
+          "odds": "-115",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34185013%3Foutcomes%3D0HC84883859N2100_1",
+           "text": "Home Point Spread",
+           "shortText": "Home Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858438,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:ND-21"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "-20.5",
+          "odds": "-110"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "+21",
+          "odds": "-105",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34185013%3Foutcomes%3D0HC84883859P2100_3",
+           "text": "Away Point Spread",
+           "shortText": "Away Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858438,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:WIS+21"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "+20.5",
+          "odds": "-113"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "o46.5",
+          "odds": "-108",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "over",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34185013%3Foutcomes%3D0OU84883859O4650_1",
+           "text": "Over Odds",
+           "shortText": "Over Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858438,
+             "betSide": "over",
+             "betType": "straight",
+             "betDetails": "Over:46.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "o47.5",
+          "odds": "-112"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "u46.5",
+          "odds": "-112",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "under",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34185013%3Foutcomes%3D0OU84883859U4650_3",
+           "text": "Under Odds",
+           "shortText": "Under Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858438,
+             "betSide": "under",
+             "betType": "straight",
+             "betDetails": "Under:46.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "u47.5",
+          "odds": "-111"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34185013",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "college-football",
+          "sport": "football",
+          "gameId": 401858438,
+          "betSide": "none",
+          "betType": "straight"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+       }
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "87",
+        "abbreviation": "ND",
+        "displayName": "Notre Dame Fighting Irish",
+        "shortDisplayName": "Notre Dame",
+        "location": "Notre Dame",
+        "name": "Fighting Irish"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "275",
+        "abbreviation": "WIS",
+        "displayName": "Wisconsin Badgers",
+        "shortDisplayName": "Wisconsin",
+        "location": "Wisconsin",
+        "name": "Badgers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856661",
+   "date": "2026-09-06T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_SCHEDULED"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": true,
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+          "rel": [
+           "light"
+          ]
+         },
+         {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+          "rel": [
+           "dark"
+          ]
+         }
+        ]
+       },
+       "details": "MISS -6.5",
+       "overUnder": 55.5,
+       "spread": -6.5,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "97",
+         "uid": "s:20~l:23~t:97",
+         "abbreviation": "LOU",
+         "name": "Cardinals",
+         "displayName": "Louisville Cardinals",
+         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "145",
+         "uid": "s:20~l:23~t:145",
+         "abbreviation": "MISS",
+         "name": "Rebels",
+         "displayName": "Ole Miss Rebels",
+         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "-258",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005254%3Foutcomes%3D0ML84376934_1",
+           "text": "Home Bet",
+           "shortText": "Home Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401856661,
+             "betSide": "home",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "-297"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "+210",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005254%3Foutcomes%3D0ML84376934_3",
+           "text": "Away Bet",
+           "shortText": "Away Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401856661,
+             "betSide": "away",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "+228"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "-6.5",
+          "odds": "-115",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005254%3Foutcomes%3D0HC84376934N650_1",
+           "text": "Home Point Spread",
+           "shortText": "Home Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401856661,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:MISS-6.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "-7",
+          "odds": "-113"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "+6.5",
+          "odds": "-105",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005254%3Foutcomes%3D0HC84376934P650_3",
+           "text": "Away Point Spread",
+           "shortText": "Away Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401856661,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:LOU+6.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "+7",
+          "odds": "-110"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "o55.5",
+          "odds": "-105",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "over",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005254%3Foutcomes%3D0OU84376934O5550_1",
+           "text": "Over Odds",
+           "shortText": "Over Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401856661,
+             "betSide": "over",
+             "betType": "straight",
+             "betDetails": "Over:55.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "o53.5",
+          "odds": "-114"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "u55.5",
+          "odds": "-115",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "under",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005254%3Foutcomes%3D0OU84376934U5550_3",
+           "text": "Under Odds",
+           "shortText": "Under Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401856661,
+             "betSide": "under",
+             "betType": "straight",
+             "betDetails": "Under:55.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "u53.5",
+          "odds": "-109"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005254",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "college-football",
+          "sport": "football",
+          "gameId": 401856661,
+          "betSide": "none",
+          "betType": "straight"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+       }
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "145",
+        "abbreviation": "MISS",
+        "displayName": "Ole Miss Rebels",
+        "shortDisplayName": "Ole Miss",
+        "location": "Ole Miss",
+        "name": "Rebels"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "97",
+        "abbreviation": "LOU",
+        "displayName": "Louisville Cardinals",
+        "shortDisplayName": "Louisville",
+        "location": "Louisville",
+        "name": "Cardinals"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864494",
+   "date": "2026-08-29T19:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -37.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "42",
+       "team": {
+        "id": "30",
+        "abbreviation": "USC",
+        "displayName": "USC Trojans",
+        "shortDisplayName": "USC",
+        "location": "USC",
+        "name": "Trojans"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "26",
+       "team": {
+        "id": "23",
+        "abbreviation": "SJSU",
+        "displayName": "San Jos\u00e9 State Spartans",
+        "shortDisplayName": "San Jos\u00e9 St",
+        "location": "San Jos\u00e9 State",
+        "name": "Spartans"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856766",
+   "date": "2026-08-29T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": true,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -7.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "10",
+       "team": {
+        "id": "2628",
+        "abbreviation": "TCU",
+        "displayName": "TCU Horned Frogs",
+        "shortDisplayName": "TCU",
+        "location": "TCU",
+        "name": "Horned Frogs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "15",
+       "team": {
+        "id": "153",
+        "abbreviation": "UNC",
+        "displayName": "North Carolina Tar Heels",
+        "shortDisplayName": "North Carolina",
+        "location": "North Carolina",
+        "name": "Tar Heels"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858202",
+   "date": "2026-08-29T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -4.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "258",
+        "abbreviation": "UVA",
+        "displayName": "Virginia Cavaliers",
+        "shortDisplayName": "Virginia",
+        "location": "Virginia",
+        "name": "Cavaliers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "8",
+       "team": {
+        "id": "152",
+        "abbreviation": "NCSU",
+        "displayName": "NC State Wolfpack",
+        "shortDisplayName": "NC State",
+        "location": "NC State",
+        "name": "Wolfpack"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864577",
+   "date": "2026-08-29T21:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "33",
+       "team": {
+        "id": "2449",
+        "abbreviation": "NDSU",
+        "displayName": "North Dakota State Bison",
+        "shortDisplayName": "N Dakota St",
+        "location": "North Dakota State",
+        "name": "Bison"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "55",
+        "abbreviation": "JVST",
+        "displayName": "Jacksonville State Gamecocks",
+        "shortDisplayName": "Jax State",
+        "location": "Jacksonville State",
+        "name": "Gamecocks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401866408",
+   "date": "2026-08-29T22:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -9.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "28",
+       "team": {
+        "id": "2199",
+        "abbreviation": "EMU",
+        "displayName": "Eastern Michigan Eagles",
+        "shortDisplayName": "E Michigan",
+        "location": "Eastern Michigan",
+        "name": "Eagles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "17",
+       "team": {
+        "id": "16",
+        "abbreviation": "SAC",
+        "displayName": "Sacramento State Hornets",
+        "shortDisplayName": "Sacramento St",
+        "location": "Sacramento State",
+        "name": "Hornets"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858201",
+   "date": "2026-08-29T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -4.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "37",
+       "team": {
+        "id": "24",
+        "abbreviation": "STAN",
+        "displayName": "Stanford Cardinal",
+        "shortDisplayName": "Stanford",
+        "location": "Stanford",
+        "name": "Cardinal"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "27",
+       "team": {
+        "id": "62",
+        "abbreviation": "HAW",
+        "displayName": "Hawai'i Rainbow Warriors",
+        "shortDisplayName": "Hawai'i",
+        "location": "Hawai'i",
+        "name": "Rainbow Warriors"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864570",
+   "date": "2026-08-29T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -30.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "52",
+        "abbreviation": "FSU",
+        "displayName": "Florida State Seminoles",
+        "shortDisplayName": "Florida St",
+        "location": "Florida State",
+        "name": "Seminoles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "17",
+       "team": {
+        "id": "166",
+        "abbreviation": "NMSU",
+        "displayName": "New Mexico State Aggies",
+        "shortDisplayName": "New Mexico St",
+        "location": "New Mexico State",
+        "name": "Aggies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862693",
+   "date": "2026-08-30T02:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -4.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "2439",
+        "abbreviation": "UNLV",
+        "displayName": "UNLV Rebels",
+        "shortDisplayName": "UNLV",
+        "location": "UNLV",
+        "name": "Rebels"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "27",
+       "team": {
+        "id": "235",
+        "abbreviation": "MEM",
+        "displayName": "Memphis Tigers",
+        "shortDisplayName": "Memphis",
+        "location": "Memphis",
+        "name": "Tigers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856768",
+   "date": "2026-09-04T01:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -38.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "66",
+       "team": {
+        "id": "254",
+        "abbreviation": "UTAH",
+        "displayName": "Utah Utes",
+        "shortDisplayName": "Utah",
+        "location": "Utah",
+        "name": "Utes"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "70",
+        "abbreviation": "IDHO",
+        "displayName": "Idaho Vandals",
+        "shortDisplayName": "Idaho",
+        "location": "Idaho",
+        "name": "Vandals"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856663",
+   "date": "2026-09-04T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -55.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "54",
+       "team": {
+        "id": "142",
+        "abbreviation": "MIZ",
+        "displayName": "Missouri Tigers",
+        "shortDisplayName": "Missouri",
+        "location": "Missouri",
+        "name": "Tigers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "2029",
+        "abbreviation": "UAPB",
+        "displayName": "Arkansas-Pine Bluff Golden Lions",
+        "shortDisplayName": "AR-Pine Bluff",
+        "location": "Arkansas-Pine Bluff",
+        "name": "Golden Lions"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858423",
+   "date": "2026-09-03T22:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -29.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "164",
+        "abbreviation": "RUTG",
+        "displayName": "Rutgers Scarlet Knights",
+        "shortDisplayName": "Rutgers",
+        "location": "Rutgers",
+        "name": "Scarlet Knights"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "37",
+       "team": {
+        "id": "113",
+        "abbreviation": "MASS",
+        "displayName": "Massachusetts Minutemen",
+        "shortDisplayName": "UMass",
+        "location": "Massachusetts",
+        "name": "Minutemen"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856767",
+   "date": "2026-09-03T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -43.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "73",
+       "team": {
+        "id": "2116",
+        "abbreviation": "UCF",
+        "displayName": "UCF Knights",
+        "shortDisplayName": "UCF",
+        "location": "UCF",
+        "name": "Knights"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "team": {
+        "id": "2065",
+        "abbreviation": "BCU",
+        "displayName": "Bethune-Cookman Wildcats",
+        "shortDisplayName": "Bethune",
+        "location": "Bethune-Cookman",
+        "name": "Wildcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858204",
+   "date": "2026-09-03T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -27.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "154",
+        "abbreviation": "WAKE",
+        "displayName": "Wake Forest Demon Deacons",
+        "shortDisplayName": "Wake Forest",
+        "location": "Wake Forest",
+        "name": "Demon Deacons"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "16",
+       "team": {
+        "id": "2006",
+        "abbreviation": "AKR",
+        "displayName": "Akron Zips",
+        "shortDisplayName": "Akron",
+        "location": "Akron",
+        "name": "Zips"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864424",
+   "date": "2026-09-03T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -31.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "42",
+       "team": {
+        "id": "48",
+        "abbreviation": "DEL",
+        "displayName": "Delaware Blue Hens",
+        "shortDisplayName": "Delaware",
+        "location": "Delaware",
+        "name": "Blue Hens"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2771",
+        "abbreviation": "MRMK",
+        "displayName": "Merrimack Warriors",
+        "shortDisplayName": "Merrimack",
+        "location": "Merrimack",
+        "name": "Warriors"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864425",
+   "date": "2026-09-03T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -22.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "47",
+       "team": {
+        "id": "338",
+        "abbreviation": "KENN",
+        "displayName": "Kennesaw State Owls",
+        "shortDisplayName": "Kennesaw St",
+        "location": "Kennesaw State",
+        "name": "Owls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2698",
+        "abbreviation": "WES",
+        "displayName": "West Georgia Wolves",
+        "shortDisplayName": "West Georgia",
+        "location": "West Georgia",
+        "name": "Wolves"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401866409",
+   "date": "2026-09-03T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -18.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "2084",
+        "abbreviation": "BUFF",
+        "displayName": "Buffalo Bulls",
+        "shortDisplayName": "Buffalo",
+        "location": "Buffalo",
+        "name": "Bulls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "17",
+       "team": {
+        "id": "399",
+        "abbreviation": "ALB",
+        "displayName": "UAlbany Great Danes",
+        "shortDisplayName": "UAlbany",
+        "location": "UAlbany",
+        "name": "Great Danes"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856776",
+   "date": "2026-09-04T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "13",
+       "team": {
+        "id": "59",
+        "abbreviation": "GT",
+        "displayName": "Georgia Tech Yellow Jackets",
+        "shortDisplayName": "Georgia Tech",
+        "location": "Georgia Tech",
+        "name": "Yellow Jackets"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "38",
+        "abbreviation": "COLO",
+        "displayName": "Colorado Buffaloes",
+        "shortDisplayName": "Colorado",
+        "location": "Colorado",
+        "name": "Buffaloes"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858422",
+   "date": "2026-09-04T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -42.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "59",
+       "team": {
+        "id": "135",
+        "abbreviation": "MINN",
+        "displayName": "Minnesota Golden Gophers",
+        "shortDisplayName": "Minnesota",
+        "location": "Minnesota",
+        "name": "Golden Gophers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2197",
+        "abbreviation": "EIU",
+        "displayName": "Eastern Illinois Panthers",
+        "shortDisplayName": "E Illinois",
+        "location": "Eastern Illinois",
+        "name": "Panthers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858424",
+   "date": "2026-09-04T01:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -25.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "42",
+       "team": {
+        "id": "356",
+        "abbreviation": "ILL",
+        "displayName": "Illinois Fighting Illini",
+        "shortDisplayName": "Illinois",
+        "location": "Illinois",
+        "name": "Fighting Illini"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "23",
+       "team": {
+        "id": "5",
+        "abbreviation": "UAB",
+        "displayName": "UAB Blazers",
+        "shortDisplayName": "UAB",
+        "location": "UAB",
+        "name": "Blazers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858206",
+   "date": "2026-09-05T01:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 24.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "6",
+       "team": {
+        "id": "24",
+        "abbreviation": "STAN",
+        "displayName": "Stanford Cardinal",
+        "shortDisplayName": "Stanford",
+        "location": "Stanford",
+        "name": "Cardinal"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "45",
+       "team": {
+        "id": "2390",
+        "abbreviation": "MIA",
+        "displayName": "Miami Hurricanes",
+        "shortDisplayName": "Miami",
+        "location": "Miami",
+        "name": "Hurricanes"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856664",
+   "date": "2026-09-05T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -40.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "51",
+       "team": {
+        "id": "201",
+        "abbreviation": "OU",
+        "displayName": "Oklahoma Sooners",
+        "shortDisplayName": "Oklahoma",
+        "location": "Oklahoma",
+        "name": "Sooners"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2638",
+        "abbreviation": "UTEP",
+        "displayName": "UTEP Miners",
+        "shortDisplayName": "UTEP",
+        "location": "UTEP",
+        "name": "Miners"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858436",
+   "date": "2026-09-05T01:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -21.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "39",
+       "team": {
+        "id": "30",
+        "abbreviation": "USC",
+        "displayName": "USC Trojans",
+        "shortDisplayName": "USC",
+        "location": "USC",
+        "name": "Trojans"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "278",
+        "abbreviation": "FRES",
+        "displayName": "Fresno State Bulldogs",
+        "shortDisplayName": "Fresno St",
+        "location": "Fresno State",
+        "name": "Bulldogs"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864495",
+   "date": "2026-09-04T22:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -1.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "2199",
+        "abbreviation": "EMU",
+        "displayName": "Eastern Michigan Eagles",
+        "shortDisplayName": "E Michigan",
+        "location": "Eastern Michigan",
+        "name": "Eagles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "27",
+       "team": {
+        "id": "23",
+        "abbreviation": "SJSU",
+        "displayName": "San Jos\u00e9 State Spartans",
+        "shortDisplayName": "San Jos\u00e9 St",
+        "location": "San Jos\u00e9 State",
+        "name": "Spartans"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858435",
+   "date": "2026-09-04T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -35.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "44",
+       "team": {
+        "id": "2509",
+        "abbreviation": "PUR",
+        "displayName": "Purdue Boilermakers",
+        "shortDisplayName": "Purdue",
+        "location": "Purdue",
+        "name": "Boilermakers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "19",
+       "team": {
+        "id": "282",
+        "abbreviation": "INST",
+        "displayName": "Indiana State Sycamores",
+        "shortDisplayName": "Indiana St",
+        "location": "Indiana State",
+        "name": "Sycamores"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401866623",
+   "date": "2026-09-04T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -28.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "59",
+       "team": {
+        "id": "2247",
+        "abbreviation": "GAST",
+        "displayName": "Georgia State Panthers",
+        "shortDisplayName": "Georgia St",
+        "location": "Georgia State",
+        "name": "Panthers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "2448",
+        "abbreviation": "NCAT",
+        "displayName": "North Carolina A&T Aggies",
+        "shortDisplayName": "NC A&T",
+        "location": "North Carolina A&T",
+        "name": "Aggies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856769",
+   "date": "2026-09-05T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -44.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "51",
+       "team": {
+        "id": "2305",
+        "abbreviation": "KU",
+        "displayName": "Kansas Jayhawks",
+        "shortDisplayName": "Kansas",
+        "location": "Kansas",
+        "name": "Jayhawks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "team": {
+        "id": "2341",
+        "abbreviation": "LIU",
+        "displayName": "Long Island University Sharks",
+        "shortDisplayName": "Long Island",
+        "location": "Long Island University",
+        "name": "Sharks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858429",
+   "date": "2026-09-05T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -10.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "30",
+       "team": {
+        "id": "127",
+        "abbreviation": "MSU",
+        "displayName": "Michigan State Spartans",
+        "shortDisplayName": "Michigan St",
+        "location": "Michigan State",
+        "name": "Spartans"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "2649",
+        "abbreviation": "TOL",
+        "displayName": "Toledo Rockets",
+        "shortDisplayName": "Toledo",
+        "location": "Toledo",
+        "name": "Rockets"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858432",
+   "date": "2026-09-05T16:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -50.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "56",
+       "team": {
+        "id": "194",
+        "abbreviation": "OSU",
+        "displayName": "Ohio State Buckeyes",
+        "shortDisplayName": "Ohio State",
+        "location": "Ohio State",
+        "name": "Buckeyes"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2050",
+        "abbreviation": "BALL",
+        "displayName": "Ball State Cardinals",
+        "shortDisplayName": "Ball State",
+        "location": "Ball State",
+        "name": "Cardinals"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858433",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -24.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "2483",
+        "abbreviation": "ORE",
+        "displayName": "Oregon Ducks",
+        "shortDisplayName": "Oregon",
+        "location": "Oregon",
+        "name": "Ducks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "27",
+       "team": {
+        "id": "68",
+        "abbreviation": "BOIS",
+        "displayName": "Boise State Broncos",
+        "shortDisplayName": "Boise St",
+        "location": "Boise State",
+        "name": "Broncos"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856658",
+   "date": "2026-09-05T19:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -49.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "63",
+       "team": {
+        "id": "61",
+        "abbreviation": "UGA",
+        "displayName": "Georgia Bulldogs",
+        "shortDisplayName": "Georgia",
+        "location": "Georgia",
+        "name": "Bulldogs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2634",
+        "abbreviation": "TNST",
+        "displayName": "Tennessee State Tigers",
+        "shortDisplayName": "Tennessee St",
+        "location": "Tennessee State",
+        "name": "Tigers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856667",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -29.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "59",
+       "team": {
+        "id": "251",
+        "abbreviation": "TEX",
+        "displayName": "Texas Longhorns",
+        "shortDisplayName": "Texas",
+        "location": "Texas",
+        "name": "Longhorns"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "326",
+        "abbreviation": "TXST",
+        "displayName": "Texas State Bobcats",
+        "shortDisplayName": "Texas St",
+        "location": "Texas State",
+        "name": "Bobcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858425",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -39.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "52",
+       "team": {
+        "id": "84",
+        "abbreviation": "IU",
+        "displayName": "Indiana Hoosiers",
+        "shortDisplayName": "Indiana",
+        "location": "Indiana",
+        "name": "Hoosiers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "16",
+       "team": {
+        "id": "249",
+        "abbreviation": "UNT",
+        "displayName": "North Texas Mean Green",
+        "shortDisplayName": "North Texas",
+        "location": "North Texas",
+        "name": "Mean Green"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856668",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -38.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "50",
+       "team": {
+        "id": "245",
+        "abbreviation": "TA&M",
+        "displayName": "Texas A&M Aggies",
+        "shortDisplayName": "Texas A&M",
+        "location": "Texas A&M",
+        "name": "Aggies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2623",
+        "abbreviation": "MOST",
+        "displayName": "Missouri State Bears",
+        "shortDisplayName": "Missouri St",
+        "location": "Missouri State",
+        "name": "Bears"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856660",
+   "date": "2026-09-06T01:40Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -10.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "51",
+       "team": {
+        "id": "99",
+        "abbreviation": "LSU",
+        "displayName": "LSU Tigers",
+        "shortDisplayName": "LSU",
+        "location": "LSU",
+        "name": "Tigers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "228",
+        "abbreviation": "CLEM",
+        "displayName": "Clemson Tigers",
+        "shortDisplayName": "Clemson",
+        "location": "Clemson",
+        "name": "Tigers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856770",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -45.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "33",
+       "team": {
+        "id": "2641",
+        "abbreviation": "TTU",
+        "displayName": "Texas Tech Red Raiders",
+        "shortDisplayName": "Texas Tech",
+        "location": "Texas Tech",
+        "name": "Red Raiders"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "2000",
+        "abbreviation": "ACU",
+        "displayName": "Abilene Christian Wildcats",
+        "shortDisplayName": "Abilene Chrstn",
+        "location": "Abilene Christian",
+        "name": "Wildcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856634",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -28.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "48",
+       "team": {
+        "id": "333",
+        "abbreviation": "ALA",
+        "displayName": "Alabama Crimson Tide",
+        "shortDisplayName": "Alabama",
+        "location": "Alabama",
+        "name": "Crimson Tide"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "151",
+        "abbreviation": "ECU",
+        "displayName": "East Carolina Pirates",
+        "shortDisplayName": "East Carolina",
+        "location": "East Carolina",
+        "name": "Pirates"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856775",
+   "date": "2026-09-06T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -50.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "63",
+       "team": {
+        "id": "252",
+        "abbreviation": "BYU",
+        "displayName": "BYU Cougars",
+        "shortDisplayName": "BYU",
+        "location": "BYU",
+        "name": "Cougars"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "3101",
+        "abbreviation": "UTU",
+        "displayName": "Utah Tech Trailblazers",
+        "shortDisplayName": "Utah Tech",
+        "location": "Utah Tech",
+        "name": "Trailblazers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858428",
+   "date": "2026-09-05T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -27.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "13",
+       "team": {
+        "id": "130",
+        "abbreviation": "MICH",
+        "displayName": "Michigan Wolverines",
+        "shortDisplayName": "Michigan",
+        "location": "Michigan",
+        "name": "Wolverines"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "12",
+       "team": {
+        "id": "2711",
+        "abbreviation": "WMU",
+        "displayName": "Western Michigan Broncos",
+        "shortDisplayName": "W Michigan",
+        "location": "Western Michigan",
+        "name": "Broncos"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858434",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -23.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "45",
+       "team": {
+        "id": "213",
+        "abbreviation": "PSU",
+        "displayName": "Penn State Nittany Lions",
+        "shortDisplayName": "Penn State",
+        "location": "Penn State",
+        "name": "Nittany Lions"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "276",
+        "abbreviation": "MRSH",
+        "displayName": "Marshall Thundering Herd",
+        "shortDisplayName": "Marshall",
+        "location": "Marshall",
+        "name": "Thundering Herd"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856666",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -49.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "56",
+       "team": {
+        "id": "2633",
+        "abbreviation": "TENN",
+        "displayName": "Tennessee Volunteers",
+        "shortDisplayName": "Tennessee",
+        "location": "Tennessee",
+        "name": "Volunteers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "9",
+       "team": {
+        "id": "231",
+        "abbreviation": "FUR",
+        "displayName": "Furman Paladins",
+        "shortDisplayName": "Furman",
+        "location": "Furman",
+        "name": "Paladins"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858426",
+   "date": "2026-09-05T20:15Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -31.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "40",
+       "team": {
+        "id": "2294",
+        "abbreviation": "IOWA",
+        "displayName": "Iowa Hawkeyes",
+        "shortDisplayName": "Iowa",
+        "location": "Iowa",
+        "name": "Hawkeyes"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2459",
+        "abbreviation": "NIU",
+        "displayName": "Northern Illinois Huskies",
+        "shortDisplayName": "N Illinois",
+        "location": "Northern Illinois",
+        "name": "Huskies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856778",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -21.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "33",
+       "team": {
+        "id": "248",
+        "abbreviation": "HOU",
+        "displayName": "Houston Cougars",
+        "shortDisplayName": "Houston",
+        "location": "Houston",
+        "name": "Cougars"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "204",
+        "abbreviation": "ORST",
+        "displayName": "Oregon State Beavers",
+        "shortDisplayName": "Oregon St",
+        "location": "Oregon State",
+        "name": "Beavers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856780",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -21.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "31",
+       "team": {
+        "id": "277",
+        "abbreviation": "WVU",
+        "displayName": "West Virginia Mountaineers",
+        "shortDisplayName": "West Virginia",
+        "location": "West Virginia",
+        "name": "Mountaineers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "24",
+       "team": {
+        "id": "324",
+        "abbreviation": "CCU",
+        "displayName": "Coastal Carolina Chanticleers",
+        "shortDisplayName": "Coastal",
+        "location": "Coastal Carolina",
+        "name": "Chanticleers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858208",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -35.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "66",
+       "team": {
+        "id": "183",
+        "abbreviation": "SYR",
+        "displayName": "Syracuse Orange",
+        "shortDisplayName": "Syracuse",
+        "location": "Syracuse",
+        "name": "Orange"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "160",
+        "abbreviation": "UNH",
+        "displayName": "New Hampshire Wildcats",
+        "shortDisplayName": "New Hampshire",
+        "location": "New Hampshire",
+        "name": "Wildcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858430",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -23.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "49",
+       "team": {
+        "id": "158",
+        "abbreviation": "NEB",
+        "displayName": "Nebraska Cornhuskers",
+        "shortDisplayName": "Nebraska",
+        "location": "Nebraska",
+        "name": "Cornhuskers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "21",
+       "team": {
+        "id": "195",
+        "abbreviation": "OHIO",
+        "displayName": "Ohio Bobcats",
+        "shortDisplayName": "Ohio",
+        "location": "Ohio",
+        "name": "Bobcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401861962",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -21.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "56",
+       "team": {
+        "id": "41",
+        "abbreviation": "CONN",
+        "displayName": "UConn Huskies",
+        "shortDisplayName": "UConn",
+        "location": "UConn",
+        "name": "Huskies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "322",
+        "abbreviation": "LAF",
+        "displayName": "Lafayette Leopards",
+        "shortDisplayName": "Lafayette",
+        "location": "Lafayette",
+        "name": "Leopards"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862701",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -37.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "59",
+       "team": {
+        "id": "349",
+        "abbreviation": "ARMY",
+        "displayName": "Army Black Knights",
+        "shortDisplayName": "Army",
+        "location": "Army",
+        "name": "Black Knights"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2803",
+        "abbreviation": "BRY",
+        "displayName": "Bryant Bulldogs",
+        "shortDisplayName": "Bryant",
+        "location": "Bryant",
+        "name": "Bulldogs"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401866410",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -1.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "13",
+       "team": {
+        "id": "189",
+        "abbreviation": "BGSU",
+        "displayName": "Bowling Green Falcons",
+        "shortDisplayName": "Bowling Green",
+        "location": "Bowling Green",
+        "name": "Falcons"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "2627",
+        "abbreviation": "TAR",
+        "displayName": "Tarleton State Texans",
+        "shortDisplayName": "Tarleton St",
+        "location": "Tarleton State",
+        "name": "Texans"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401869960",
+   "date": "2026-09-05T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "20",
+       "team": {
+        "id": "256",
+        "abbreviation": "JMU",
+        "displayName": "James Madison Dukes",
+        "shortDisplayName": "James Madison",
+        "location": "James Madison",
+        "name": "Dukes"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "13",
+       "team": {
+        "id": "2335",
+        "abbreviation": "LIB",
+        "displayName": "Liberty Flames",
+        "shortDisplayName": "Liberty",
+        "location": "Liberty",
+        "name": "Flames"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858207",
+   "date": "2026-09-05T16:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -16.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "59",
+       "team": {
+        "id": "221",
+        "abbreviation": "PITT",
+        "displayName": "Pittsburgh Panthers",
+        "shortDisplayName": "Pitt",
+        "location": "Pittsburgh",
+        "name": "Panthers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "193",
+        "abbreviation": "M-OH",
+        "displayName": "Miami (OH) RedHawks",
+        "shortDisplayName": "Miami OH",
+        "location": "Miami (OH)",
+        "name": "RedHawks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856665",
+   "date": "2026-09-05T16:45Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -35.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "57",
+       "team": {
+        "id": "2579",
+        "abbreviation": "SC",
+        "displayName": "South Carolina Gamecocks",
+        "shortDisplayName": "South Carolina",
+        "location": "South Carolina",
+        "name": "Gamecocks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2309",
+        "abbreviation": "KENT",
+        "displayName": "Kent State Golden Flashes",
+        "shortDisplayName": "Kent State",
+        "location": "Kent State",
+        "name": "Golden Flashes"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856659",
+   "date": "2026-09-05T17:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -22.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "45",
+       "team": {
+        "id": "96",
+        "abbreviation": "UK",
+        "displayName": "Kentucky Wildcats",
+        "shortDisplayName": "Kentucky",
+        "location": "Kentucky",
+        "name": "Wildcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "13",
+       "team": {
+        "id": "2754",
+        "abbreviation": "YSU",
+        "displayName": "Youngstown State Penguins",
+        "shortDisplayName": "Youngstown St",
+        "location": "Youngstown State",
+        "name": "Penguins"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856779",
+   "date": "2026-09-05T17:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -29.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "66",
+        "abbreviation": "ISU",
+        "displayName": "Iowa State Cyclones",
+        "shortDisplayName": "Iowa State",
+        "location": "Iowa State",
+        "name": "Cyclones"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "2546",
+        "abbreviation": "SEMO",
+        "displayName": "Southeast Missouri State Redhawks",
+        "shortDisplayName": "SE Missouri",
+        "location": "Southeast Missouri State",
+        "name": "Redhawks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864496",
+   "date": "2026-09-05T17:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -31.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "2005",
+        "abbreviation": "AFA",
+        "displayName": "Air Force Falcons",
+        "shortDisplayName": "Air Force",
+        "location": "Air Force",
+        "name": "Falcons"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2184",
+        "abbreviation": "DUQ",
+        "displayName": "Duquesne Dukes",
+        "shortDisplayName": "Duquesne",
+        "location": "Duquesne",
+        "name": "Dukes"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862698",
+   "date": "2026-09-05T18:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -14.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "218",
+        "abbreviation": "TEM",
+        "displayName": "Temple Owls",
+        "shortDisplayName": "Temple",
+        "location": "Temple",
+        "name": "Owls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "227",
+        "abbreviation": "URI",
+        "displayName": "Rhode Island Rams",
+        "shortDisplayName": "Rhode Island",
+        "location": "Rhode Island",
+        "name": "Rams"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856636",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": true,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "17",
+       "team": {
+        "id": "2",
+        "abbreviation": "AUB",
+        "displayName": "Auburn Tigers",
+        "shortDisplayName": "Auburn",
+        "location": "Auburn",
+        "name": "Tigers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "16",
+       "team": {
+        "id": "239",
+        "abbreviation": "BAY",
+        "displayName": "Baylor Bears",
+        "shortDisplayName": "Baylor",
+        "location": "Baylor",
+        "name": "Bears"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856777",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -7.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "2132",
+        "abbreviation": "CIN",
+        "displayName": "Cincinnati Bearcats",
+        "shortDisplayName": "Cincinnati",
+        "location": "Cincinnati",
+        "name": "Bearcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "15",
+       "team": {
+        "id": "103",
+        "abbreviation": "BC",
+        "displayName": "Boston College Eagles",
+        "shortDisplayName": "Boston College",
+        "location": "Boston College",
+        "name": "Eagles"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858209",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -9.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "17",
+       "team": {
+        "id": "150",
+        "abbreviation": "DUKE",
+        "displayName": "Duke Blue Devils",
+        "shortDisplayName": "Duke",
+        "location": "Duke",
+        "name": "Blue Devils"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2655",
+        "abbreviation": "TULN",
+        "displayName": "Tulane Green Wave",
+        "shortDisplayName": "Tulane",
+        "location": "Tulane",
+        "name": "Green Wave"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862694",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -20.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "41",
+       "team": {
+        "id": "2429",
+        "abbreviation": "CLT",
+        "displayName": "Charlotte 49ers",
+        "shortDisplayName": "Charlotte",
+        "location": "Charlotte",
+        "name": "49ers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "43",
+       "team": {
+        "id": "2643",
+        "abbreviation": "CIT",
+        "displayName": "The Citadel Bulldogs",
+        "shortDisplayName": "The Citadel",
+        "location": "The Citadel",
+        "name": "Bulldogs"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862696",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -31.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "42",
+       "team": {
+        "id": "2426",
+        "abbreviation": "NAVY",
+        "displayName": "Navy Midshipmen",
+        "shortDisplayName": "Navy",
+        "location": "Navy",
+        "name": "Midshipmen"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "15",
+       "team": {
+        "id": "119",
+        "abbreviation": "TOW",
+        "displayName": "Towson Tigers",
+        "shortDisplayName": "Towson",
+        "location": "Towson",
+        "name": "Tigers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862700",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -28.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "45",
+       "team": {
+        "id": "2636",
+        "abbreviation": "UTSA",
+        "displayName": "UTSA Roadrunners",
+        "shortDisplayName": "UTSA",
+        "location": "UTSA",
+        "name": "Roadrunners"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "16",
+       "team": {
+        "id": "292",
+        "abbreviation": "RGV",
+        "displayName": "UT Rio Grande Valley Vaqueros",
+        "shortDisplayName": "UT Rio Grande",
+        "location": "UT Rio Grande Valley",
+        "name": "Vaqueros"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864499",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -41.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "2449",
+        "abbreviation": "NDSU",
+        "displayName": "North Dakota State Bison",
+        "shortDisplayName": "N Dakota St",
+        "location": "North Dakota State",
+        "name": "Bison"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2230",
+        "abbreviation": "FOR",
+        "displayName": "Fordham Rams",
+        "shortDisplayName": "Fordham",
+        "location": "Fordham",
+        "name": "Rams"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401866627",
+   "date": "2026-09-05T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -21.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "55",
+       "team": {
+        "id": "2026",
+        "abbreviation": "APP",
+        "displayName": "App State Mountaineers",
+        "shortDisplayName": "App State",
+        "location": "App State",
+        "name": "Mountaineers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "311",
+        "abbreviation": "ME",
+        "displayName": "Maine Black Bears",
+        "shortDisplayName": "Maine",
+        "location": "Maine",
+        "name": "Black Bears"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856772",
+   "date": "2026-09-05T19:45Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 13.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "202",
+        "abbreviation": "TLSA",
+        "displayName": "Tulsa Golden Hurricane",
+        "shortDisplayName": "Tulsa",
+        "location": "Tulsa",
+        "name": "Golden Hurricane"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "197",
+        "abbreviation": "OKST",
+        "displayName": "Oklahoma State Cowboys",
+        "shortDisplayName": "Oklahoma St",
+        "location": "Oklahoma State",
+        "name": "Cowboys"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856635",
+   "date": "2026-09-05T20:15Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -40.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "31",
+       "team": {
+        "id": "8",
+        "abbreviation": "ARK",
+        "displayName": "Arkansas Razorbacks",
+        "shortDisplayName": "Arkansas",
+        "location": "Arkansas",
+        "name": "Razorbacks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "2453",
+        "abbreviation": "UNA",
+        "displayName": "North Alabama Lions",
+        "shortDisplayName": "North Alabama",
+        "location": "North Alabama",
+        "name": "Lions"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401868356",
+   "date": "2026-09-05T21:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -20.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "49",
+       "team": {
+        "id": "2572",
+        "abbreviation": "USM",
+        "displayName": "Southern Miss Golden Eagles",
+        "shortDisplayName": "Southern Miss",
+        "location": "Southern Miss",
+        "name": "Golden Eagles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2016",
+        "abbreviation": "ALCN",
+        "displayName": "Alcorn State Braves",
+        "shortDisplayName": "Alcorn St",
+        "location": "Alcorn State",
+        "name": "Braves"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401860878",
+   "date": "2026-09-05T22:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -2.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "35",
+       "team": {
+        "id": "36",
+        "abbreviation": "CSU",
+        "displayName": "Colorado State Rams",
+        "shortDisplayName": "Colorado St",
+        "location": "Colorado State",
+        "name": "Rams"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "13",
+       "team": {
+        "id": "2751",
+        "abbreviation": "WYO",
+        "displayName": "Wyoming Cowboys",
+        "shortDisplayName": "Wyoming",
+        "location": "Wyoming",
+        "name": "Cowboys"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401867973",
+   "date": "2026-09-05T22:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -41.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "31",
+       "team": {
+        "id": "295",
+        "abbreviation": "ODU",
+        "displayName": "Old Dominion Monarchs",
+        "shortDisplayName": "Old Dominion",
+        "location": "Old Dominion",
+        "name": "Monarchs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "2450",
+        "abbreviation": "NORF",
+        "displayName": "Norfolk State Spartans",
+        "shortDisplayName": "Norfolk St",
+        "location": "Norfolk State",
+        "name": "Spartans"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856669",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -29.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "28",
+       "team": {
+        "id": "238",
+        "abbreviation": "VAN",
+        "displayName": "Vanderbilt Commodores",
+        "shortDisplayName": "Vanderbilt",
+        "location": "Vanderbilt",
+        "name": "Commodores"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "9",
+       "team": {
+        "id": "2046",
+        "abbreviation": "APSU",
+        "displayName": "Austin Peay Governors",
+        "shortDisplayName": "Austin Peay",
+        "location": "Austin Peay",
+        "name": "Governors"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856771",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -41.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "71",
+       "team": {
+        "id": "2306",
+        "abbreviation": "KSU",
+        "displayName": "Kansas State Wildcats",
+        "shortDisplayName": "Kansas St",
+        "location": "Kansas State",
+        "name": "Wildcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2447",
+        "abbreviation": "NICH",
+        "displayName": "Nicholls Colonels",
+        "shortDisplayName": "Nicholls",
+        "location": "Nicholls",
+        "name": "Colonels"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401860880",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -15.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "17",
+       "team": {
+        "id": "328",
+        "abbreviation": "USU",
+        "displayName": "Utah State Aggies",
+        "shortDisplayName": "Utah State",
+        "location": "Utah State",
+        "name": "Aggies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "29",
+       "team": {
+        "id": "304",
+        "abbreviation": "IDST",
+        "displayName": "Idaho State Bengals",
+        "shortDisplayName": "Idaho St",
+        "location": "Idaho State",
+        "name": "Bengals"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862695",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -10.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "42",
+       "team": {
+        "id": "235",
+        "abbreviation": "MEM",
+        "displayName": "Memphis Tigers",
+        "shortDisplayName": "Memphis",
+        "location": "Memphis",
+        "name": "Tigers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "24",
+       "team": {
+        "id": "2032",
+        "abbreviation": "ARST",
+        "displayName": "Arkansas State Red Wolves",
+        "shortDisplayName": "Arkansas St",
+        "location": "Arkansas State",
+        "name": "Red Wolves"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862697",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -22.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "31",
+       "team": {
+        "id": "242",
+        "abbreviation": "RICE",
+        "displayName": "Rice Owls",
+        "shortDisplayName": "Rice",
+        "location": "Rice",
+        "name": "Owls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2277",
+        "abbreviation": "HCU",
+        "displayName": "Houston Christian Huskies",
+        "shortDisplayName": "Hou Christian",
+        "location": "Houston Christian",
+        "name": "Huskies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401862699",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -14.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "19",
+       "team": {
+        "id": "58",
+        "abbreviation": "USF",
+        "displayName": "South Florida Bulls",
+        "shortDisplayName": "South Florida",
+        "location": "South Florida",
+        "name": "Bulls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "9",
+       "team": {
+        "id": "2229",
+        "abbreviation": "FIU",
+        "displayName": "Florida International Panthers",
+        "shortDisplayName": "FIU",
+        "location": "Florida International",
+        "name": "Panthers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401868140",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -22.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "49",
+       "team": {
+        "id": "55",
+        "abbreviation": "JVST",
+        "displayName": "Jacksonville State Gamecocks",
+        "shortDisplayName": "Jax State",
+        "location": "Jacksonville State",
+        "name": "Gamecocks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2198",
+        "abbreviation": "EKU",
+        "displayName": "Eastern Kentucky Colonels",
+        "shortDisplayName": "E Kentucky",
+        "location": "Eastern Kentucky",
+        "name": "Colonels"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401868170",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -28.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "31",
+       "team": {
+        "id": "290",
+        "abbreviation": "GASO",
+        "displayName": "Georgia Southern Eagles",
+        "shortDisplayName": "GA Southern",
+        "location": "Georgia Southern",
+        "name": "Eagles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2127",
+        "abbreviation": "CHSO",
+        "displayName": "Charleston Southern Buccaneers",
+        "shortDisplayName": "Charleston So",
+        "location": "Charleston Southern",
+        "name": "Buccaneers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401868316",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -13.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "39",
+       "team": {
+        "id": "6",
+        "abbreviation": "USA",
+        "displayName": "South Alabama Jaguars",
+        "shortDisplayName": "South Alabama",
+        "location": "South Alabama",
+        "name": "Jaguars"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "2545",
+        "abbreviation": "SELA",
+        "displayName": "SE Louisiana Lions",
+        "shortDisplayName": "SE Louisiana",
+        "location": "SE Louisiana",
+        "name": "Lions"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401870763",
+   "date": "2026-09-05T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -15.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "2653",
+        "abbreviation": "TROY",
+        "displayName": "Troy Trojans",
+        "shortDisplayName": "Troy",
+        "location": "Troy",
+        "name": "Trojans"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "21",
+       "team": {
+        "id": "2534",
+        "abbreviation": "SHSU",
+        "displayName": "Sam Houston Bearkats",
+        "shortDisplayName": "Sam Houston",
+        "location": "Sam Houston",
+        "name": "Bearkats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856662",
+   "date": "2026-09-05T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -28.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "62",
+       "team": {
+        "id": "344",
+        "abbreviation": "MSST",
+        "displayName": "Mississippi State Bulldogs",
+        "shortDisplayName": "Mississippi St",
+        "location": "Mississippi State",
+        "name": "Bulldogs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "13",
+       "team": {
+        "id": "2433",
+        "abbreviation": "ULM",
+        "displayName": "UL Monroe Warhawks",
+        "shortDisplayName": "UL Monroe",
+        "location": "UL Monroe",
+        "name": "Warhawks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858211",
+   "date": "2026-09-05T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -54.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "73",
+       "team": {
+        "id": "259",
+        "abbreviation": "VT",
+        "displayName": "Virginia Tech Hokies",
+        "shortDisplayName": "Virginia Tech",
+        "location": "Virginia Tech",
+        "name": "Hokies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2678",
+        "abbreviation": "VMI",
+        "displayName": "VMI Keydets",
+        "shortDisplayName": "VMI",
+        "location": "VMI",
+        "name": "Keydets"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401869129",
+   "date": "2026-09-05T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -44.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "80",
+       "team": {
+        "id": "2348",
+        "abbreviation": "LT",
+        "displayName": "Louisiana Tech Bulldogs",
+        "shortDisplayName": "Louisiana Tech",
+        "location": "Louisiana Tech",
+        "name": "Bulldogs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "team": {
+        "id": "2466",
+        "abbreviation": "NWST",
+        "displayName": "Northwestern State Demons",
+        "shortDisplayName": "N'Western St",
+        "location": "Northwestern State",
+        "name": "Demons"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856637",
+   "date": "2026-09-05T23:45Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -26.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "66",
+       "team": {
+        "id": "57",
+        "abbreviation": "FLA",
+        "displayName": "Florida Gators",
+        "shortDisplayName": "Florida",
+        "location": "Florida",
+        "name": "Gators"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "21",
+       "team": {
+        "id": "2226",
+        "abbreviation": "FAU",
+        "displayName": "Florida Atlantic Owls",
+        "shortDisplayName": "FAU",
+        "location": "Florida Atlantic",
+        "name": "Owls"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401867866",
+   "date": "2026-09-05T23:45Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -22.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "2393",
+        "abbreviation": "MTSU",
+        "displayName": "Middle Tennessee Blue Raiders",
+        "shortDisplayName": "MTSU",
+        "location": "Middle Tennessee",
+        "name": "Blue Raiders"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "93",
+        "abbreviation": "MUR",
+        "displayName": "Murray State Racers",
+        "shortDisplayName": "Murray St",
+        "location": "Murray State",
+        "name": "Racers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858427",
+   "date": "2026-09-06T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -45.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "62",
+       "team": {
+        "id": "120",
+        "abbreviation": "MD",
+        "displayName": "Maryland Terrapins",
+        "shortDisplayName": "Maryland",
+        "location": "Maryland",
+        "name": "Terrapins"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2261",
+        "abbreviation": "HAMP",
+        "displayName": "Hampton Pirates",
+        "shortDisplayName": "Hampton",
+        "location": "Hampton",
+        "name": "Pirates"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858431",
+   "date": "2026-09-06T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -14.0
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "77",
+        "abbreviation": "NU",
+        "displayName": "Northwestern Wildcats",
+        "shortDisplayName": "Northwestern",
+        "location": "Northwestern",
+        "name": "Wildcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "18",
+       "team": {
+        "id": "2571",
+        "abbreviation": "SDST",
+        "displayName": "South Dakota State Jackrabbits",
+        "shortDisplayName": "S Dakota St",
+        "location": "South Dakota State",
+        "name": "Jackrabbits"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401869142",
+   "date": "2026-09-06T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -20.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "309",
+        "abbreviation": "UL",
+        "displayName": "Louisiana Ragin' Cajuns",
+        "shortDisplayName": "Louisiana",
+        "location": "Louisiana",
+        "name": "Ragin' Cajuns"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2320",
+        "abbreviation": "LAM",
+        "displayName": "Lamar Cardinals",
+        "shortDisplayName": "Lamar",
+        "location": "Lamar",
+        "name": "Cardinals"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401870790",
+   "date": "2026-09-06T01:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -29.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "51",
+       "team": {
+        "id": "166",
+        "abbreviation": "NMSU",
+        "displayName": "New Mexico State Aggies",
+        "shortDisplayName": "New Mexico St",
+        "location": "New Mexico State",
+        "name": "Aggies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "2385",
+        "abbreviation": "MERC",
+        "displayName": "Mercyhurst Lakers",
+        "shortDisplayName": "Mercyhurst",
+        "location": "Mercyhurst",
+        "name": "Lakers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856773",
+   "date": "2026-09-06T01:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -33.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "35",
+       "team": {
+        "id": "12",
+        "abbreviation": "ARIZ",
+        "displayName": "Arizona Wildcats",
+        "shortDisplayName": "Arizona",
+        "location": "Arizona",
+        "name": "Wildcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2464",
+        "abbreviation": "NAU",
+        "displayName": "Northern Arizona Lumberjacks",
+        "shortDisplayName": "N Arizona",
+        "location": "Northern Arizona",
+        "name": "Lumberjacks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401860879",
+   "date": "2026-09-06T01:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -38.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "53",
+       "team": {
+        "id": "21",
+        "abbreviation": "SDSU",
+        "displayName": "San Diego State Aztecs",
+        "shortDisplayName": "San Diego St",
+        "location": "San Diego State",
+        "name": "Aztecs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "2502",
+        "abbreviation": "PRST",
+        "displayName": "Portland State Vikings",
+        "shortDisplayName": "Portland St",
+        "location": "Portland State",
+        "name": "Vikings"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401856774",
+   "date": "2026-09-06T02:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -43.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "70",
+       "team": {
+        "id": "9",
+        "abbreviation": "ASU",
+        "displayName": "Arizona State Sun Devils",
+        "shortDisplayName": "Arizona St",
+        "location": "Arizona State",
+        "name": "Sun Devils"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2415",
+        "abbreviation": "MORG",
+        "displayName": "Morgan State Bears",
+        "shortDisplayName": "Morgan St",
+        "location": "Morgan State",
+        "name": "Bears"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864497",
+   "date": "2026-09-06T02:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 2.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "6",
+       "team": {
+        "id": "62",
+        "abbreviation": "HAW",
+        "displayName": "Hawai'i Rainbow Warriors",
+        "shortDisplayName": "Hawai'i",
+        "location": "Hawai'i",
+        "name": "Rainbow Warriors"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "21",
+       "team": {
+        "id": "2439",
+        "abbreviation": "UNLV",
+        "displayName": "UNLV Rebels",
+        "shortDisplayName": "UNLV",
+        "location": "UNLV",
+        "name": "Rebels"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864498",
+   "date": "2026-09-06T02:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -11.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "167",
+        "abbreviation": "UNM",
+        "displayName": "New Mexico Lobos",
+        "shortDisplayName": "New Mexico",
+        "location": "New Mexico",
+        "name": "Lobos"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2117",
+        "abbreviation": "CMU",
+        "displayName": "Central Michigan Chippewas",
+        "shortDisplayName": "C Michigan",
+        "location": "Central Michigan",
+        "name": "Chippewas"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401866411",
+   "date": "2026-09-06T02:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -38.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "52",
+       "team": {
+        "id": "16",
+        "abbreviation": "SAC",
+        "displayName": "Sacramento State Hornets",
+        "shortDisplayName": "Sacramento St",
+        "location": "Sacramento State",
+        "name": "Hornets"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2400",
+        "abbreviation": "MVSU",
+        "displayName": "Mississippi Valley State Delta Devils",
+        "shortDisplayName": "Miss Valley St",
+        "location": "Mississippi Valley State",
+        "name": "Delta Devils"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858210",
+   "date": "2026-09-06T02:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 2.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "25",
+        "abbreviation": "CAL",
+        "displayName": "California Golden Bears",
+        "shortDisplayName": "California",
+        "location": "California",
+        "name": "Golden Bears"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "45",
+       "team": {
+        "id": "26",
+        "abbreviation": "UCLA",
+        "displayName": "UCLA Bruins",
+        "shortDisplayName": "UCLA",
+        "location": "UCLA",
+        "name": "Bruins"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401864432",
+   "date": "2026-09-06T02:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 1.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "49",
+       "team": {
+        "id": "2440",
+        "abbreviation": "NEV",
+        "displayName": "Nevada Wolf Pack",
+        "shortDisplayName": "Nevada",
+        "location": "Nevada",
+        "name": "Wolf Pack"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "98",
+        "abbreviation": "WKU",
+        "displayName": "Western Kentucky Hilltoppers",
+        "shortDisplayName": "Western KY",
+        "location": "Western Kentucky",
+        "name": "Hilltoppers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401858212",
+   "date": "2026-09-07T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_SCHEDULED"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "logos": [
+         {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+          "rel": [
+           "light"
+          ]
+         },
+         {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+          "rel": [
+           "dark"
+          ]
+         }
+        ]
+       },
+       "details": "SMU -3",
+       "overUnder": 52.5,
+       "spread": 3.0,
+       "awayTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "2567",
+         "uid": "s:20~l:23~t:2567",
+         "abbreviation": "SMU",
+         "name": "Mustangs",
+         "displayName": "SMU Mustangs",
+         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "homeTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "52",
+         "uid": "s:20~l:23~t:52",
+         "abbreviation": "FSU",
+         "name": "Seminoles",
+         "displayName": "Florida State Seminoles",
+         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "+130",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005255%3Foutcomes%3D0ML84376935_1",
+           "text": "Home Bet",
+           "shortText": "Home Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858212,
+             "betSide": "home",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "+116"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "-155",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005255%3Foutcomes%3D0ML84376935_3",
+           "text": "Away Bet",
+           "shortText": "Away Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858212,
+             "betSide": "away",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "-144"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "+3",
+          "odds": "-115",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005255%3Foutcomes%3D0HC84376935P300_1",
+           "text": "Home Point Spread",
+           "shortText": "Home Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858212,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:FSU+3"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "+2.5",
+          "odds": "-109"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "-3",
+          "odds": "-105",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005255%3Foutcomes%3D0HC84376935N300_3",
+           "text": "Away Point Spread",
+           "shortText": "Away Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858212,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:SMU-3"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "-2.5",
+          "odds": "-114"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "o52.5",
+          "odds": "-115",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "over",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005255%3Foutcomes%3D0OU84376935O5250_1",
+           "text": "Over Odds",
+           "shortText": "Over Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858212,
+             "betSide": "over",
+             "betType": "straight",
+             "betDetails": "Over:52.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "o52.5",
+          "odds": "-113"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "u52.5",
+          "odds": "-105",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "under",
+            "desktop",
+            "bets"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005255%3Foutcomes%3D0OU84376935U5250_3",
+           "text": "Under Odds",
+           "shortText": "Under Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "college-football",
+             "sport": "football",
+             "gameId": 401858212,
+             "betSide": "under",
+             "betType": "straight",
+             "betDetails": "Under:52.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "u52.5",
+          "odds": "-110"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "bets"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34005255",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "college-football",
+          "sport": "football",
+          "gameId": 401858212,
+          "betSide": "none",
+          "betType": "straight"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+       }
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "52",
+        "abbreviation": "FSU",
+        "displayName": "Florida State Seminoles",
+        "shortDisplayName": "Florida St",
+        "location": "Florida State",
+        "name": "Seminoles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2567",
+        "abbreviation": "SMU",
+        "displayName": "SMU Mustangs",
+        "shortDisplayName": "SMU",
+        "location": "SMU",
+        "name": "Mustangs"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

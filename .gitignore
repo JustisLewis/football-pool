@@ -1,0 +1,8 @@
+data/pool.db
+data/cache/
+__pycache__/
+*.pyc
+.venv/
+dashboard.html
+.pytest_cache/
+.DS_Store

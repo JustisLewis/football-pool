@@ -1,0 +1,2555 @@
+{
+ "season": {
+  "type": 2,
+  "year": 2025
+ },
+ "week": {
+  "number": 5
+ },
+ "events": [
+  {
+   "id": "401762471",
+   "date": "2025-09-25T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "28",
+       "team": {
+        "id": "151",
+        "abbreviation": "ECU",
+        "displayName": "East Carolina Pirates",
+        "shortDisplayName": "East Carolina",
+        "location": "East Carolina",
+        "name": "Pirates"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "team": {
+        "id": "349",
+        "abbreviation": "ARMY",
+        "displayName": "Army Black Knights",
+        "shortDisplayName": "Army",
+        "location": "Army",
+        "name": "Black Knights"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401754543",
+   "date": "2025-09-26T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "46",
+       "team": {
+        "id": "258",
+        "abbreviation": "UVA",
+        "displayName": "Virginia Cavaliers",
+        "shortDisplayName": "Virginia",
+        "location": "Virginia",
+        "name": "Cavaliers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "38",
+       "team": {
+        "id": "52",
+        "abbreviation": "FSU",
+        "displayName": "Florida State Seminoles",
+        "shortDisplayName": "Florida St",
+        "location": "Florida State",
+        "name": "Seminoles"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401756902",
+   "date": "2025-09-27T01:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -2.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "27",
+       "team": {
+        "id": "9",
+        "abbreviation": "ASU",
+        "displayName": "Arizona State Sun Devils",
+        "shortDisplayName": "Arizona St",
+        "location": "Arizona State",
+        "name": "Sun Devils"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "24",
+       "team": {
+        "id": "2628",
+        "abbreviation": "TCU",
+        "displayName": "TCU Horned Frogs",
+        "shortDisplayName": "TCU",
+        "location": "TCU",
+        "name": "Horned Frogs"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752939",
+   "date": "2025-09-27T02:35Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 11.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "204",
+        "abbreviation": "ORST",
+        "displayName": "Oregon State Beavers",
+        "shortDisplayName": "Oregon St",
+        "location": "Oregon State",
+        "name": "Beavers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "27",
+       "team": {
+        "id": "248",
+        "abbreviation": "HOU",
+        "displayName": "Houston Cougars",
+        "shortDisplayName": "Houston",
+        "location": "Houston",
+        "name": "Cougars"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752852",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 9.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "6",
+       "team": {
+        "id": "264",
+        "abbreviation": "WASH",
+        "displayName": "Washington Huskies",
+        "shortDisplayName": "Washington",
+        "location": "Washington",
+        "name": "Huskies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "24",
+       "team": {
+        "id": "194",
+        "abbreviation": "OSU",
+        "displayName": "Ohio State Buckeyes",
+        "shortDisplayName": "Ohio State",
+        "location": "Ohio State",
+        "name": "Buckeyes"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752854",
+   "date": "2025-09-27T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -4.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "213",
+        "abbreviation": "PSU",
+        "displayName": "Penn State Nittany Lions",
+        "shortDisplayName": "Penn State",
+        "location": "Penn State",
+        "name": "Nittany Lions"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "30",
+       "team": {
+        "id": "2483",
+        "abbreviation": "ORE",
+        "displayName": "Oregon Ducks",
+        "shortDisplayName": "Oregon",
+        "location": "Oregon",
+        "name": "Ducks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752719",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "145",
+        "abbreviation": "MISS",
+        "displayName": "Ole Miss Rebels",
+        "shortDisplayName": "Ole Miss",
+        "location": "Ole Miss",
+        "name": "Rebels"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "19",
+       "team": {
+        "id": "99",
+        "abbreviation": "LSU",
+        "displayName": "LSU Tigers",
+        "shortDisplayName": "LSU",
+        "location": "LSU",
+        "name": "Tigers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752718",
+   "date": "2025-09-27T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -2.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "61",
+        "abbreviation": "UGA",
+        "displayName": "Georgia Bulldogs",
+        "shortDisplayName": "Georgia",
+        "location": "Georgia",
+        "name": "Bulldogs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "24",
+       "team": {
+        "id": "333",
+        "abbreviation": "ALA",
+        "displayName": "Alabama Crimson Tide",
+        "shortDisplayName": "Alabama",
+        "location": "Alabama",
+        "name": "Crimson Tide"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752724",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "16",
+       "team": {
+        "id": "245",
+        "abbreviation": "TA&M",
+        "displayName": "Texas A&M Aggies",
+        "shortDisplayName": "Texas A&M",
+        "location": "Texas A&M",
+        "name": "Aggies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "2",
+        "abbreviation": "AUB",
+        "displayName": "Auburn Tigers",
+        "shortDisplayName": "Auburn",
+        "location": "Auburn",
+        "name": "Tigers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752853",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 8.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "15",
+       "team": {
+        "id": "2294",
+        "abbreviation": "IOWA",
+        "displayName": "Iowa Hawkeyes",
+        "shortDisplayName": "Iowa",
+        "location": "Iowa",
+        "name": "Hawkeyes"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "84",
+        "abbreviation": "IU",
+        "displayName": "Indiana Hoosiers",
+        "shortDisplayName": "Indiana",
+        "location": "Indiana",
+        "name": "Hoosiers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401756904",
+   "date": "2025-09-27T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -4.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "39",
+       "team": {
+        "id": "66",
+        "abbreviation": "ISU",
+        "displayName": "Iowa State Cyclones",
+        "shortDisplayName": "Iowa State",
+        "location": "Iowa State",
+        "name": "Cyclones"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "12",
+        "abbreviation": "ARIZ",
+        "displayName": "Arizona Wildcats",
+        "shortDisplayName": "Arizona",
+        "location": "Arizona",
+        "name": "Wildcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752720",
+   "date": "2025-09-27T20:15Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 7.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "344",
+        "abbreviation": "MSST",
+        "displayName": "Mississippi State Bulldogs",
+        "shortDisplayName": "Mississippi St",
+        "location": "Mississippi State",
+        "name": "Bulldogs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "41",
+       "team": {
+        "id": "2633",
+        "abbreviation": "TENN",
+        "displayName": "Tennessee Volunteers",
+        "shortDisplayName": "Tennessee",
+        "location": "Tennessee",
+        "name": "Volunteers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401754546",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 11.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "29",
+       "team": {
+        "id": "154",
+        "abbreviation": "WAKE",
+        "displayName": "Wake Forest Demon Deacons",
+        "shortDisplayName": "Wake Forest",
+        "location": "Wake Forest",
+        "name": "Demon Deacons"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "30",
+       "team": {
+        "id": "59",
+        "abbreviation": "GT",
+        "displayName": "Georgia Tech Yellow Jackets",
+        "shortDisplayName": "Georgia Tech",
+        "location": "Georgia Tech",
+        "name": "Yellow Jackets"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752725",
+   "date": "2025-09-27T16:45Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -24.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "55",
+       "team": {
+        "id": "238",
+        "abbreviation": "VAN",
+        "displayName": "Vanderbilt Commodores",
+        "shortDisplayName": "Vanderbilt",
+        "location": "Vanderbilt",
+        "name": "Commodores"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "35",
+       "team": {
+        "id": "328",
+        "abbreviation": "USU",
+        "displayName": "Utah State Aggies",
+        "shortDisplayName": "Utah State",
+        "location": "Utah State",
+        "name": "Aggies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752721",
+   "date": "2025-09-27T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -44.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "42",
+       "team": {
+        "id": "142",
+        "abbreviation": "MIZ",
+        "displayName": "Missouri Tigers",
+        "shortDisplayName": "Missouri",
+        "location": "Missouri",
+        "name": "Tigers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "team": {
+        "id": "113",
+        "abbreviation": "MASS",
+        "displayName": "Massachusetts Minutemen",
+        "shortDisplayName": "UMass",
+        "location": "Massachusetts",
+        "name": "Minutemen"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752850",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "356",
+        "abbreviation": "ILL",
+        "displayName": "Illinois Fighting Illini",
+        "shortDisplayName": "Illinois",
+        "location": "Illinois",
+        "name": "Fighting Illini"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "32",
+       "team": {
+        "id": "30",
+        "abbreviation": "USC",
+        "displayName": "USC Trojans",
+        "shortDisplayName": "USC",
+        "location": "USC",
+        "name": "Trojans"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752717",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 5.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "13",
+       "team": {
+        "id": "8",
+        "abbreviation": "ARK",
+        "displayName": "Arkansas Razorbacks",
+        "shortDisplayName": "Arkansas",
+        "location": "Arkansas",
+        "name": "Razorbacks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "56",
+       "team": {
+        "id": "87",
+        "abbreviation": "ND",
+        "displayName": "Notre Dame Fighting Irish",
+        "shortDisplayName": "Notre Dame",
+        "location": "Notre Dame",
+        "name": "Fighting Irish"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401756903",
+   "date": "2025-09-28T02:15Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "38",
+        "abbreviation": "COLO",
+        "displayName": "Colorado Buffaloes",
+        "shortDisplayName": "Colorado",
+        "location": "Colorado",
+        "name": "Buffaloes"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "24",
+       "team": {
+        "id": "252",
+        "abbreviation": "BYU",
+        "displayName": "BYU Cougars",
+        "shortDisplayName": "BYU",
+        "location": "BYU",
+        "name": "Cougars"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752849",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "31",
+       "team": {
+        "id": "135",
+        "abbreviation": "MINN",
+        "displayName": "Minnesota Golden Gophers",
+        "shortDisplayName": "Minnesota",
+        "location": "Minnesota",
+        "name": "Golden Gophers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "28",
+       "team": {
+        "id": "164",
+        "abbreviation": "RUTG",
+        "displayName": "Rutgers Scarlet Knights",
+        "shortDisplayName": "Rutgers",
+        "location": "Rutgers",
+        "name": "Scarlet Knights"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401754545",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "team": {
+        "id": "183",
+        "abbreviation": "SYR",
+        "displayName": "Syracuse Orange",
+        "shortDisplayName": "Syracuse",
+        "location": "Syracuse",
+        "name": "Orange"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "38",
+       "team": {
+        "id": "150",
+        "abbreviation": "DUKE",
+        "displayName": "Duke Blue Devils",
+        "shortDisplayName": "Duke",
+        "location": "Duke",
+        "name": "Blue Devils"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401754547",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "27",
+       "team": {
+        "id": "221",
+        "abbreviation": "PITT",
+        "displayName": "Pittsburgh Panthers",
+        "shortDisplayName": "Pitt",
+        "location": "Pittsburgh",
+        "name": "Panthers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "34",
+       "team": {
+        "id": "97",
+        "abbreviation": "LOU",
+        "displayName": "Louisville Cardinals",
+        "shortDisplayName": "Louisville",
+        "location": "Louisville",
+        "name": "Cardinals"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401756905",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -4.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "2305",
+        "abbreviation": "KU",
+        "displayName": "Kansas Jayhawks",
+        "shortDisplayName": "Kansas",
+        "location": "Kansas",
+        "name": "Jayhawks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "37",
+       "team": {
+        "id": "2132",
+        "abbreviation": "CIN",
+        "displayName": "Cincinnati Bearcats",
+        "shortDisplayName": "Cincinnati",
+        "location": "Cincinnati",
+        "name": "Bearcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401756906",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -5.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "34",
+       "team": {
+        "id": "2306",
+        "abbreviation": "KSU",
+        "displayName": "Kansas State Wildcats",
+        "shortDisplayName": "Kansas St",
+        "location": "Kansas State",
+        "name": "Wildcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "2116",
+        "abbreviation": "UCF",
+        "displayName": "UCF Knights",
+        "shortDisplayName": "UCF",
+        "location": "UCF",
+        "name": "Knights"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401761617",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -11.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "36",
+       "team": {
+        "id": "249",
+        "abbreviation": "UNT",
+        "displayName": "North Texas Mean Green",
+        "shortDisplayName": "North Texas",
+        "location": "North Texas",
+        "name": "Mean Green"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "22",
+       "team": {
+        "id": "6",
+        "abbreviation": "USA",
+        "displayName": "South Alabama Jaguars",
+        "shortDisplayName": "South Alabama",
+        "location": "South Alabama",
+        "name": "Jaguars"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762825",
+   "date": "2025-09-27T16:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -7.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "35",
+       "team": {
+        "id": "195",
+        "abbreviation": "OHIO",
+        "displayName": "Ohio Bobcats",
+        "shortDisplayName": "Ohio",
+        "location": "Ohio",
+        "name": "Bobcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "189",
+        "abbreviation": "BGSU",
+        "displayName": "Bowling Green Falcons",
+        "shortDisplayName": "Bowling Green",
+        "location": "Bowling Green",
+        "name": "Falcons"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762826",
+   "date": "2025-09-27T17:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "2117",
+        "abbreviation": "CMU",
+        "displayName": "Central Michigan Chippewas",
+        "shortDisplayName": "C Michigan",
+        "location": "Central Michigan",
+        "name": "Chippewas"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "13",
+       "team": {
+        "id": "2199",
+        "abbreviation": "EMU",
+        "displayName": "Eastern Michigan Eagles",
+        "shortDisplayName": "E Michigan",
+        "location": "Eastern Michigan",
+        "name": "Eagles"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401761614",
+   "date": "2025-09-27T17:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -16.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "35",
+       "team": {
+        "id": "256",
+        "abbreviation": "JMU",
+        "displayName": "James Madison Dukes",
+        "shortDisplayName": "James Madison",
+        "location": "James Madison",
+        "name": "Dukes"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "10",
+       "team": {
+        "id": "290",
+        "abbreviation": "GASO",
+        "displayName": "Georgia Southern Eagles",
+        "shortDisplayName": "GA Southern",
+        "location": "Georgia Southern",
+        "name": "Eagles"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401761616",
+   "date": "2025-09-27T19:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -1.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "28",
+       "team": {
+        "id": "2433",
+        "abbreviation": "ULM",
+        "displayName": "UL Monroe Warhawks",
+        "shortDisplayName": "UL Monroe",
+        "location": "UL Monroe",
+        "name": "Warhawks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "16",
+       "team": {
+        "id": "2032",
+        "abbreviation": "ARST",
+        "displayName": "Arkansas State Red Wolves",
+        "shortDisplayName": "Arkansas St",
+        "location": "Arkansas State",
+        "name": "Red Wolves"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752851",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "17",
+       "team": {
+        "id": "77",
+        "abbreviation": "NU",
+        "displayName": "Northwestern Wildcats",
+        "shortDisplayName": "Northwestern",
+        "location": "Northwestern",
+        "name": "Wildcats"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "26",
+        "abbreviation": "UCLA",
+        "displayName": "UCLA Bruins",
+        "shortDisplayName": "UCLA",
+        "location": "UCLA",
+        "name": "Bruins"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401754544",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "103",
+        "abbreviation": "BC",
+        "displayName": "Boston College Eagles",
+        "shortDisplayName": "Boston College",
+        "location": "Boston College",
+        "name": "Eagles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "28",
+       "team": {
+        "id": "25",
+        "abbreviation": "CAL",
+        "displayName": "California Golden Bears",
+        "shortDisplayName": "California",
+        "location": "California",
+        "name": "Golden Bears"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401756907",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 21.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "27",
+       "team": {
+        "id": "197",
+        "abbreviation": "OKST",
+        "displayName": "Oklahoma State Cowboys",
+        "shortDisplayName": "Oklahoma St",
+        "location": "Oklahoma State",
+        "name": "Cowboys"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "45",
+       "team": {
+        "id": "239",
+        "abbreviation": "BAY",
+        "displayName": "Baylor Bears",
+        "shortDisplayName": "Baylor",
+        "location": "Baylor",
+        "name": "Bears"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401756908",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 12.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "14",
+       "team": {
+        "id": "277",
+        "abbreviation": "WVU",
+        "displayName": "West Virginia Mountaineers",
+        "shortDisplayName": "West Virginia",
+        "location": "West Virginia",
+        "name": "Mountaineers"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "48",
+       "team": {
+        "id": "254",
+        "abbreviation": "UTAH",
+        "displayName": "Utah Utes",
+        "shortDisplayName": "Utah",
+        "location": "Utah",
+        "name": "Utes"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401757170",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 2.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "17",
+       "team": {
+        "id": "2084",
+        "abbreviation": "BUFF",
+        "displayName": "Buffalo Bulls",
+        "shortDisplayName": "Buffalo",
+        "location": "Buffalo",
+        "name": "Bulls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "41",
+        "abbreviation": "CONN",
+        "displayName": "UConn Huskies",
+        "shortDisplayName": "UConn",
+        "location": "UConn",
+        "name": "Huskies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401760380",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 1.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "team": {
+        "id": "2459",
+        "abbreviation": "NIU",
+        "displayName": "Northern Illinois Huskies",
+        "shortDisplayName": "N Illinois",
+        "location": "Northern Illinois",
+        "name": "Huskies"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "team": {
+        "id": "21",
+        "abbreviation": "SDSU",
+        "displayName": "San Diego State Aztecs",
+        "shortDisplayName": "San Diego St",
+        "location": "San Diego State",
+        "name": "Aztecs"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762473",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -14.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "2426",
+        "abbreviation": "NAVY",
+        "displayName": "Navy Midshipmen",
+        "shortDisplayName": "Navy",
+        "location": "Navy",
+        "name": "Midshipmen"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "13",
+       "team": {
+        "id": "242",
+        "abbreviation": "RICE",
+        "displayName": "Rice Owls",
+        "shortDisplayName": "Rice",
+        "location": "Rice",
+        "name": "Owls"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762824",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -22.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "45",
+       "team": {
+        "id": "2649",
+        "abbreviation": "TOL",
+        "displayName": "Toledo Rockets",
+        "shortDisplayName": "Toledo",
+        "location": "Toledo",
+        "name": "Rockets"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "team": {
+        "id": "2006",
+        "abbreviation": "AKR",
+        "displayName": "Akron Zips",
+        "shortDisplayName": "Akron",
+        "location": "Akron",
+        "name": "Zips"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762827",
+   "date": "2025-09-27T19:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -22.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "193",
+        "abbreviation": "M-OH",
+        "displayName": "Miami (OH) RedHawks",
+        "shortDisplayName": "Miami OH",
+        "location": "Miami (OH)",
+        "name": "RedHawks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "2815",
+        "abbreviation": "LIN",
+        "displayName": "Lindenwood Lions",
+        "shortDisplayName": "Lindenwood",
+        "location": "Lindenwood",
+        "name": "Lions"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401757274",
+   "date": "2025-09-27T20:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -17.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "38",
+       "team": {
+        "id": "167",
+        "abbreviation": "UNM",
+        "displayName": "New Mexico Lobos",
+        "shortDisplayName": "New Mexico",
+        "location": "New Mexico",
+        "name": "Lobos"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "166",
+        "abbreviation": "NMSU",
+        "displayName": "New Mexico State Aggies",
+        "shortDisplayName": "New Mexico St",
+        "location": "New Mexico State",
+        "name": "Aggies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401760378",
+   "date": "2025-09-27T20:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "35",
+       "team": {
+        "id": "2005",
+        "abbreviation": "AFA",
+        "displayName": "Air Force Falcons",
+        "shortDisplayName": "Air Force",
+        "location": "Air Force",
+        "name": "Falcons"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "44",
+       "team": {
+        "id": "62",
+        "abbreviation": "HAW",
+        "displayName": "Hawai'i Rainbow Warriors",
+        "shortDisplayName": "Hawai'i",
+        "location": "Hawai'i",
+        "name": "Rainbow Warriors"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762474",
+   "date": "2025-09-27T20:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 14.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "14",
+       "team": {
+        "id": "202",
+        "abbreviation": "TLSA",
+        "displayName": "Tulsa Golden Hurricane",
+        "shortDisplayName": "Tulsa",
+        "location": "Tulsa",
+        "name": "Golden Hurricane"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "31",
+       "team": {
+        "id": "2655",
+        "abbreviation": "TULN",
+        "displayName": "Tulane Green Wave",
+        "shortDisplayName": "Tulane",
+        "location": "Tulane",
+        "name": "Green Wave"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401757270",
+   "date": "2025-09-27T22:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -7.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "24",
+       "team": {
+        "id": "338",
+        "abbreviation": "KENN",
+        "displayName": "Kennesaw State Owls",
+        "shortDisplayName": "Kennesaw St",
+        "location": "Kennesaw State",
+        "name": "Owls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "16",
+       "team": {
+        "id": "2393",
+        "abbreviation": "MTSU",
+        "displayName": "Middle Tennessee Blue Raiders",
+        "shortDisplayName": "MTSU",
+        "location": "Middle Tennessee",
+        "name": "Blue Raiders"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401757271",
+   "date": "2025-09-27T22:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -14.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "295",
+        "abbreviation": "ODU",
+        "displayName": "Old Dominion Monarchs",
+        "shortDisplayName": "Old Dominion",
+        "location": "Old Dominion",
+        "name": "Monarchs"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "team": {
+        "id": "2335",
+        "abbreviation": "LIB",
+        "displayName": "Liberty Flames",
+        "shortDisplayName": "Liberty",
+        "location": "Liberty",
+        "name": "Flames"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762828",
+   "date": "2025-09-27T22:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -8.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "47",
+       "team": {
+        "id": "2711",
+        "abbreviation": "WMU",
+        "displayName": "Western Michigan Broncos",
+        "shortDisplayName": "W Michigan",
+        "location": "Western Michigan",
+        "name": "Broncos"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "227",
+        "abbreviation": "URI",
+        "displayName": "Rhode Island Rams",
+        "shortDisplayName": "Rhode Island",
+        "location": "Rhode Island",
+        "name": "Rams"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401754548",
+   "date": "2025-09-27T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -10.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "21",
+       "team": {
+        "id": "152",
+        "abbreviation": "NCSU",
+        "displayName": "NC State Wolfpack",
+        "shortDisplayName": "NC State",
+        "location": "NC State",
+        "name": "Wolfpack"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "23",
+       "team": {
+        "id": "259",
+        "abbreviation": "VT",
+        "displayName": "Virginia Tech Hokies",
+        "shortDisplayName": "Virginia Tech",
+        "location": "Virginia Tech",
+        "name": "Hokies"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401757269",
+   "date": "2025-09-27T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -5.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "42",
+       "team": {
+        "id": "2572",
+        "abbreviation": "USM",
+        "displayName": "Southern Miss Golden Eagles",
+        "shortDisplayName": "Southern Miss",
+        "location": "Southern Miss",
+        "name": "Golden Eagles"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "25",
+       "team": {
+        "id": "55",
+        "abbreviation": "JVST",
+        "displayName": "Jacksonville State Gamecocks",
+        "shortDisplayName": "Jax State",
+        "location": "Jacksonville State",
+        "name": "Gamecocks"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401757273",
+   "date": "2025-09-27T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "22",
+       "team": {
+        "id": "2623",
+        "abbreviation": "MOST",
+        "displayName": "Missouri State Bears",
+        "shortDisplayName": "Missouri St",
+        "location": "Missouri State",
+        "name": "Bears"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "27",
+       "team": {
+        "id": "98",
+        "abbreviation": "WKU",
+        "displayName": "Western Kentucky Hilltoppers",
+        "shortDisplayName": "Western KY",
+        "location": "Western Kentucky",
+        "name": "Hilltoppers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401762472",
+   "date": "2025-09-27T23:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 13.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "26",
+       "team": {
+        "id": "2226",
+        "abbreviation": "FAU",
+        "displayName": "Florida Atlantic Owls",
+        "shortDisplayName": "FAU",
+        "location": "Florida Atlantic",
+        "name": "Owls"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "55",
+       "team": {
+        "id": "235",
+        "abbreviation": "MEM",
+        "displayName": "Memphis Tigers",
+        "shortDisplayName": "Memphis",
+        "location": "Memphis",
+        "name": "Tigers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752950",
+   "date": "2025-09-27T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "team": {
+        "id": "36",
+        "abbreviation": "CSU",
+        "displayName": "Colorado State Rams",
+        "shortDisplayName": "Colorado St",
+        "location": "Colorado State",
+        "name": "Rams"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "20",
+       "team": {
+        "id": "265",
+        "abbreviation": "WSU",
+        "displayName": "Washington State Cougars",
+        "shortDisplayName": "Washington St",
+        "location": "Washington State",
+        "name": "Cougars"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401754549",
+   "date": "2025-09-27T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "30",
+       "team": {
+        "id": "24",
+        "abbreviation": "STAN",
+        "displayName": "Stanford Cardinal",
+        "shortDisplayName": "Stanford",
+        "location": "Stanford",
+        "name": "Cardinal"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "29",
+       "team": {
+        "id": "23",
+        "abbreviation": "SJSU",
+        "displayName": "San Jos\u00e9 State Spartans",
+        "shortDisplayName": "San Jos\u00e9 St",
+        "location": "San Jos\u00e9 State",
+        "name": "Spartans"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401760379",
+   "date": "2025-09-27T23:30Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -17.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "47",
+       "team": {
+        "id": "68",
+        "abbreviation": "BOIS",
+        "displayName": "Boise State Broncos",
+        "shortDisplayName": "Boise St",
+        "location": "Boise State",
+        "name": "Broncos"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "14",
+       "team": {
+        "id": "2026",
+        "abbreviation": "APP",
+        "displayName": "App State Mountaineers",
+        "shortDisplayName": "App State",
+        "location": "App State",
+        "name": "Mountaineers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401752722",
+   "date": "2025-09-27T23:45Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": -6.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "35",
+       "team": {
+        "id": "2579",
+        "abbreviation": "SC",
+        "displayName": "South Carolina Gamecocks",
+        "shortDisplayName": "South Carolina",
+        "location": "South Carolina",
+        "name": "Gamecocks"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "13",
+       "team": {
+        "id": "96",
+        "abbreviation": "UK",
+        "displayName": "Kentucky Wildcats",
+        "shortDisplayName": "Kentucky",
+        "location": "Kentucky",
+        "name": "Wildcats"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401761615",
+   "date": "2025-09-28T00:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 1.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "54",
+       "team": {
+        "id": "309",
+        "abbreviation": "UL",
+        "displayName": "Louisiana Ragin' Cajuns",
+        "shortDisplayName": "Louisiana",
+        "location": "Louisiana",
+        "name": "Ragin' Cajuns"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "51",
+       "team": {
+        "id": "276",
+        "abbreviation": "MRSH",
+        "displayName": "Marshall Thundering Herd",
+        "shortDisplayName": "Marshall",
+        "location": "Marshall",
+        "name": "Thundering Herd"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401757272",
+   "date": "2025-09-28T01:00Z",
+   "status": {
+    "type": {
+     "name": "STATUS_FINAL"
+    }
+   },
+   "competitions": [
+    {
+     "neutralSite": false,
+     "odds": [
+      {
+       "provider": {
+        "name": "backfilled"
+       },
+       "spread": 3.5
+      }
+     ],
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "11",
+       "team": {
+        "id": "2638",
+        "abbreviation": "UTEP",
+        "displayName": "UTEP Miners",
+        "shortDisplayName": "UTEP",
+        "location": "UTEP",
+        "name": "Miners"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "30",
+       "team": {
+        "id": "2348",
+        "abbreviation": "LT",
+        "displayName": "Louisiana Tech Bulldogs",
+        "shortDisplayName": "Louisiana Tech",
+        "location": "Louisiana Tech",
+        "name": "Bulldogs"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
