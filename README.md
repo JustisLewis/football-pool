@@ -26,8 +26,8 @@ Nothing else needs a key: ESPN's endpoints are public.
 ```bash
 mkdir -p slates/2026/week03          # drop the screenshot(s) in here
 ./fp import                          # parse, confirm, store the slate
-./fp pick -i                         # walk the slate, one keystroke per game
-./fp tiebreak 52                     # total-points prediction
+./fp pick -i                         # walk the slate, then the total-points pick
+./fp tiebreak 52                     # or set the total-points pick on its own
 ./fp sync                            # refresh scores and grade
 ./fp record                          # season summary
 ./fp dashboard                       # rebuild dashboard.html

@@ -282,7 +282,26 @@ def cmd_slate(args) -> int:
     if not rows:
         die(f"no slate stored for {season} week {week}. Run:  ./fp import")
     _print_slate(rows, season, week)
+    _tiebreak_line(conn, season, week, rows)
     return 0
+
+
+def _tiebreak_line(conn, season: int, week: int, rows) -> None:
+    """Report the week's total-points prediction, or that it is still missing."""
+    if not any(r["is_tiebreaker"] for r in rows):
+        return
+    status = report.tiebreaker_status(conn, season, week)
+    if status is None:
+        game = next(r for r in rows if r["is_tiebreaker"])
+        out(
+            f"Tiebreaker {game['away_abbr']} @ {game['home_abbr']}: no prediction yet"
+            f" -- ./fp tiebreak <points>"
+        )
+        return
+    line = f"Tiebreaker {status['matchup']}: predicted {status['predicted']}"
+    if status["actual"] is not None:
+        line += f", actual {status['actual']} (off by {status['diff']})"
+    out(line)
 
 
 def _print_slate(rows, season, week) -> None:
@@ -319,13 +338,7 @@ def cmd_picks(args) -> int:
     if not rows:
         die(f"no slate stored for {season} week {week}. Run:  ./fp import")
     _print_slate([r for r in rows if r["picked_side"] or r["is_tiebreaker"]], season, week)
-
-    tb = report.tiebreaker_status(conn, season, week)
-    if tb:
-        line = f"Tiebreaker {tb['matchup']}: predicted {tb['predicted']}"
-        if tb["actual"] is not None:
-            line += f", actual {tb['actual']} (off by {tb['diff']})"
-        out(line)
+    _tiebreak_line(conn, season, week, rows)
     return 0
 
 
@@ -400,6 +413,7 @@ def _save(conn, season, week, row, side, note=None) -> None:
 
 def _pick_interactive(conn, rows, season, week) -> int:
     out(f"{season} week {week} -- Enter keeps an existing pick, 's' skips, 'q' quits.\n")
+    quit_early = False
     for row in rows:
         line_text = format_line(row["pool_line"], row["home_abbr"], row["away_abbr"])
         current = f" [current: {row['picked_abbr']}]" if row["picked_side"] else ""
@@ -412,8 +426,10 @@ def _pick_interactive(conn, rows, season, week) -> int:
             answer = input(prompt).strip().lower()
         except (EOFError, KeyboardInterrupt):
             out("\nStopped.")
+            quit_early = True
             break
         if answer in ("q", "quit"):
+            quit_early = True
             break
         if answer in ("", "s", "skip"):
             continue
@@ -423,12 +439,49 @@ def _pick_interactive(conn, rows, season, week) -> int:
             continue
         _save(conn, season, week, row, side)
 
+    if not quit_early:
+        _prompt_tiebreaker(conn, season, week)
+
     remaining = [
         r for r in db.slate_for_week(conn, season, week)
         if not r["is_tiebreaker"] and not r["picked_side"]
     ]
     out(f"\n{len(rows) - len(remaining)} of {len(rows)} games picked")
     return 0
+
+
+def _prompt_tiebreaker(conn, season: int, week: int) -> None:
+    """Ask for the total-points prediction, if the slate has a tiebreaker.
+
+    This lives in the interactive walk because it is part of the week's entry,
+    not a separate errand to remember.
+    """
+    rows = [r for r in db.slate_for_week(conn, season, week) if r["is_tiebreaker"]]
+    if not rows:
+        return
+    row = rows[0]
+    existing = db.get_tiebreaker(conn, season, week)
+    current = f" [current: {existing['predicted_total']}]" if existing else ""
+    prompt = (
+        f"\n  Tiebreaker: {row['away_abbr']} @ {row['home_abbr']}{current}\n"
+        f"     total points > "
+    )
+    while True:
+        try:
+            answer = input(prompt).strip()
+        except (EOFError, KeyboardInterrupt):
+            out("")
+            return
+        if answer in ("", "s", "skip", "q", "quit"):
+            return
+        try:
+            total = int(answer)
+        except ValueError:
+            warn(f"     ? {answer!r} is not a whole number of points")
+            continue
+        db.save_tiebreaker(conn, season, week, row["espn_id"], total)
+        out(f"  {row['away_abbr']} @ {row['home_abbr']}: predicted {total} points")
+        return
 
 
 def cmd_unpick(args) -> int:

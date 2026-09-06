@@ -116,3 +116,72 @@ class TestDashboardRenders:
     def test_sample_banner_only_appears_when_asked(self, loaded):
         assert "Sample picks" not in dashboard.render(loaded, SEASON, WEEK)
         assert "Sample picks" in dashboard.render(loaded, SEASON, WEEK, sample=True)
+
+
+class TestTiebreaker:
+    """The total-points game is scored on the combined final, not a spread."""
+
+    TIEBREAK_ID = "401752852"  # OSU 24 @ WASH 6 -> 30 points
+
+    @pytest.fixture
+    def with_tiebreaker(self, loaded):
+        slate = [
+            {
+                "season": SEASON,
+                "week": WEEK,
+                "espn_id": self.TIEBREAK_ID,
+                "slot": 99,
+                "pool_line": None,
+                "is_tiebreaker": 1,
+                "raw_text": "Total Points - Ohio State @ Washington",
+                "source_image": None,
+            }
+        ]
+        existing = [dict(r) for r in db.slate_for_week(loaded, SEASON, WEEK)]
+        rows = [
+            {
+                "season": SEASON,
+                "week": WEEK,
+                "espn_id": r["espn_id"],
+                "slot": r["slot"],
+                "pool_line": r["pool_line"],
+                "is_tiebreaker": 0,
+                "raw_text": r["raw_text"],
+                "source_image": None,
+            }
+            for r in existing
+        ]
+        db.replace_slate(loaded, SEASON, WEEK, rows + slate)
+        return loaded
+
+    def test_status_is_none_before_a_prediction_is_made(self, with_tiebreaker):
+        assert report.tiebreaker_status(with_tiebreaker, SEASON, WEEK) is None
+
+    def test_prediction_is_scored_against_the_combined_total(self, with_tiebreaker):
+        db.save_tiebreaker(with_tiebreaker, SEASON, WEEK, self.TIEBREAK_ID, 44)
+        status = report.tiebreaker_status(with_tiebreaker, SEASON, WEEK)
+        assert status["predicted"] == 44
+        assert status["actual"] == 30  # 24 + 6
+        assert status["diff"] == 14
+        assert status["final"] is True
+
+    def test_re_predicting_replaces_rather_than_duplicates(self, with_tiebreaker):
+        db.save_tiebreaker(with_tiebreaker, SEASON, WEEK, self.TIEBREAK_ID, 44)
+        db.save_tiebreaker(with_tiebreaker, SEASON, WEEK, self.TIEBREAK_ID, 31)
+        assert report.tiebreaker_status(with_tiebreaker, SEASON, WEEK)["predicted"] == 31
+        count = with_tiebreaker.execute(
+            "SELECT COUNT(*) FROM tiebreakers WHERE season = ? AND week = ?",
+            (SEASON, WEEK),
+        ).fetchone()[0]
+        assert count == 1
+
+    def test_tiebreaker_is_not_counted_as_a_spread_pick(self, with_tiebreaker):
+        db.save_tiebreaker(with_tiebreaker, SEASON, WEEK, self.TIEBREAK_ID, 44)
+        record = report.tally(report.graded_picks(with_tiebreaker, SEASON))
+        assert record.wins + record.losses == 5  # the five spread picks only
+
+    def test_dashboard_shows_the_prediction(self, with_tiebreaker):
+        db.save_tiebreaker(with_tiebreaker, SEASON, WEEK, self.TIEBREAK_ID, 44)
+        html = dashboard.render(with_tiebreaker, SEASON, WEEK)
+        assert "Tiebreaker" in html
+        assert "off by <b>14</b>" in html
