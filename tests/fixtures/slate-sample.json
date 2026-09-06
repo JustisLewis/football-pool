@@ -1,0 +1,17 @@
+{
+ "week_label": "SAMPLE WEEK",
+ "games": [
+  {"away": "North Carolina", "home": "TCU", "favored": "home", "spread_magnitude": 7.5, "is_tiebreaker": false, "raw_text": "North Carolina @ TCU (-7.5)"},
+  {"away": "NC State", "home": "Virginia", "favored": "home", "spread_magnitude": 3.5, "is_tiebreaker": false, "raw_text": "NC State @ Virginia (-3.5)"},
+  {"away": "San Jose St", "home": "USC", "favored": "home", "spread_magnitude": 37.5, "is_tiebreaker": false, "raw_text": "San Jose St @ USC (-37.5)"},
+  {"away": "Wash St", "home": "Washington", "favored": "home", "spread_magnitude": 24.0, "is_tiebreaker": false, "raw_text": "Wash St @ Washington (-24)"},
+  {"away": "Miami (FL)", "home": "Stanford", "favored": "away", "spread_magnitude": 24.5, "is_tiebreaker": false, "raw_text": "Miami (FL) (-24.5) @ Stanford"},
+  {"away": "Oklahoma St", "home": "Tulsa", "favored": "away", "spread_magnitude": 13.5, "is_tiebreaker": false, "raw_text": "Oklahoma St (-13.5) @ Tulsa"},
+  {"away": "Western Kentucky", "home": "Nevada", "favored": "away", "spread_magnitude": 1.5, "is_tiebreaker": false, "raw_text": "Western Kentucky (-1.5) @ Nevada"},
+  {"away": "Jacksonville St", "home": "North Dakota St", "favored": "unknown", "spread_magnitude": 6.5, "is_tiebreaker": false, "raw_text": "Jacksonville St @ North Dakota St (6.5)"},
+  {"away": "Wisconsin", "home": "Notre Dame", "favored": "home", "spread_magnitude": 20.5, "is_tiebreaker": false, "raw_text": "Wisconsin @ Notre Dame (-20.5)"},
+  {"away": "UAB", "home": "Illinois", "favored": "home", "spread_magnitude": 25.5, "is_tiebreaker": false, "raw_text": "UAB @ Illinois (-25.5)"},
+  {"away": "UMass", "home": "Rutgers", "favored": "home", "spread_magnitude": 29.5, "is_tiebreaker": false, "raw_text": "UMass @ Rutgers (-29.5)"},
+  {"away": "Akron", "home": "Wake Forest", "favored": "unknown", "spread_magnitude": null, "is_tiebreaker": true, "raw_text": "Total Points - Akron @ Wake Forest"}
+ ]
+}

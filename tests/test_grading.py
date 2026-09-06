@@ -96,16 +96,16 @@ class TestCoverMargin:
 
 class TestFormatting:
     def test_home_favorite_renders_with_home_abbr(self):
-        assert format_line(-6.5, "GT", "COLO") == "GT -6.5"
+        assert format_line(-6.5, "TCU", "UNC") == "TCU -6.5"
 
     def test_away_favorite_renders_with_away_abbr(self):
-        assert format_line(2.5, "HAW", "UNLV") == "UNLV -2.5"
+        assert format_line(2.5, "STAN", "MIA") == "MIA -2.5"
 
     def test_pickem(self):
-        assert format_line(0, "GT", "COLO") == "PK"
+        assert format_line(0, "TCU", "UNC") == "PK"
 
     def test_trims_trailing_zeros(self):
-        assert format_line(-7.0, "GT", "COLO") == "GT -7"
+        assert format_line(-7.0, "TCU", "UNC") == "TCU -7"
 
 
 class TestToHomeRelative:

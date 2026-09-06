@@ -1,8 +1,8 @@
 """The plain-text pick list sent to the commissioner.
 
 The list has to be readable line-for-line against the sheet they sent out, so
-it echoes their own wording rather than ESPN's -- ESPN writes Hawaii as
-"Hawai'i" and Ole Miss as "Ole Miss Rebels".
+it echoes their own wording rather than ESPN's -- ESPN writes "San Jose St" as
+"San Jose State Spartans".
 """
 
 import sqlite3
@@ -17,31 +17,34 @@ from football_pool.matching import WeekIndex, split_matchup
 SEASON, WEEK = 2026, 1
 
 SLATE = [
-    # raw slate line,                    picked side, expected output line
-    ("UNLV (-2.5) @ Hawaii", "home", "Hawaii"),
-    ("Louisville @ Ole Miss (-6.5)", "home", "Ole Miss"),
-    ("Miami (OH) @ Pittsburgh (-16.5)", "away", "Miami (OH)"),
+    # raw slate line,                      picked side, expected output line
+    ("San Jose St @ USC (-37.5)", "away", "San Jose St"),
+    ("Miami (FL) (-24.5) @ Stanford", "away", "Miami (FL)"),
+    ("Wash St @ Washington (-24)", "home", "Washington"),
 ]
 
 
 class TestSplitMatchup:
     def test_strips_the_spread_but_keeps_a_name_parenthetical(self):
-        assert split_matchup("Miami (OH) @ Pittsburgh (-16.5)") == (
-            "Miami (OH)",
-            "Pittsburgh",
+        assert split_matchup("Miami (FL) @ Stanford (-16.5)") == (
+            "Miami (FL)",
+            "Stanford",
         )
 
     def test_handles_the_away_favorite_form(self):
-        assert split_matchup("UNLV (-2.5) @ Hawaii") == ("UNLV", "Hawaii")
+        assert split_matchup("Wash St (-2.5) @ Washington") == (
+            "Wash St",
+            "Washington",
+        )
 
     def test_drops_the_total_points_prefix(self):
-        assert split_matchup("Total Points - Furman @ Tennessee") == (
-            "Furman",
-            "Tennessee",
+        assert split_matchup("Total Points - Akron @ Wake Forest") == (
+            "Akron",
+            "Wake Forest",
         )
 
     def test_returns_none_when_there_is_no_matchup(self):
-        assert split_matchup("WEEK ONE!!!!") is None
+        assert split_matchup("SAMPLE WEEK") is None
         assert split_matchup("") is None
 
 
@@ -69,14 +72,14 @@ def picked(tmp_path, week1_2026):
         )
         picks.append((match, side))
 
-    tb_away, tb_home = split_matchup("Total Points - Furman @ Tennessee")
+    tb_away, tb_home = split_matchup("Total Points - Akron @ Wake Forest")
     tb = index.best_match(tb_away, tb_home)[0]
     rows.append(
         {
             "espn_id": tb.espn_id,
             "slot": 99,
             "is_tiebreaker": 1,
-            "raw_text": "Total Points - Furman @ Tennessee",
+            "raw_text": "Total Points - Akron @ Wake Forest",
             "away_text": tb_away,
             "home_text": tb_home,
         }
@@ -102,18 +105,17 @@ class TestExport:
         code, captured = run_export(picked, capsys)
         assert code == 0
         assert captured.out.splitlines() == [
-            "Hawaii",
-            "Ole Miss",
-            "Miami (OH)",
+            "San Jose St",
+            "Miami (FL)",
+            "Washington",
             "64 points",
         ]
 
     def test_uses_the_sheets_wording_not_espns(self, picked, capsys):
-        """ESPN calls these Hawai'i and Ole Miss Rebels; the sheet does not."""
+        """ESPN calls this the San Jose State Spartans; the sheet does not."""
         _, captured = run_export(picked, capsys)
-        assert "Hawaii" in captured.out
-        assert "Hawai'i" not in captured.out
-        assert "Rebels" not in captured.out
+        assert "San Jose St" in captured.out
+        assert "Spartans" not in captured.out
 
     def test_nothing_but_picks_on_stdout(self, picked, capsys):
         """The output is piped straight to a message, so no headers or totals."""
@@ -156,7 +158,7 @@ class TestMigration:
                 PRIMARY KEY (season, week, espn_id)
             );
             INSERT INTO slate_games VALUES
-                (2026, 1, '999', 1, -2.5, 0, 'UNLV (-2.5) @ Hawaii', NULL);
+                (2026, 1, '999', 1, -2.5, 0, 'Wash St (-2.5) @ Washington', NULL);
             """
         )
         old.commit()
@@ -166,4 +168,4 @@ class TestMigration:
         row = conn.execute(
             "SELECT away_text, home_text FROM slate_games WHERE espn_id = '999'"
         ).fetchone()
-        assert (row["away_text"], row["home_text"]) == ("UNLV", "Hawaii")
+        assert (row["away_text"], row["home_text"]) == ("Wash St", "Washington")

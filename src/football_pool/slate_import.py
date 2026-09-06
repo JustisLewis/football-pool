@@ -46,22 +46,22 @@ Format rules, which matter more than they look:
 2. A spread in parentheses attaches to THE TEAM IT SITS NEXT TO, and that team
    is the favorite. Position is the only thing that determines the favorite --
    never infer it from which team seems better.
-     `Colorado @ Georgia Tech (-6.5)`  -> home team Georgia Tech favored by 6.5
-                                          -> favored="home", spread_magnitude=6.5
-     `UNLV (-2.5) @ Hawaii`            -> away team UNLV favored by 2.5
-                                          -> favored="away", spread_magnitude=2.5
+     `North Carolina @ TCU (-7.5)`  -> home team TCU favored by 7.5
+                                       -> favored="home", spread_magnitude=7.5
+     `Miami (FL) (-24.5) @ Stanford`-> away team Miami favored by 24.5
+                                       -> favored="away", spread_magnitude=24.5
 
 3. If a number has NO visible minus sign, you cannot tell who is favored.
    Return favored="unknown" and put the number in spread_magnitude. Do NOT
-   guess a direction. Example: `Arkansas St @ Memphis (11.5)` -> favored="unknown",
-   spread_magnitude=11.5.
+   guess a direction. Example: `Jacksonville St @ North Dakota St (6.5)` ->
+   favored="unknown", spread_magnitude=6.5.
 
 4. A line marked as a total-points or tiebreaker game (e.g.
-   `Total Points - Furman @ Tennessee`) has no spread: set is_tiebreaker=true,
+   `Total Points - Akron @ Wake Forest`) has no spread: set is_tiebreaker=true,
    favored="unknown", spread_magnitude=null.
 
 5. Copy team names exactly as written, including shorthand and parentheticals
-   (`Tenn St`, `Miami (OH)`, `Ole Miss`). Do not expand or correct them.
+   (`Wash St`, `Miami (FL)`, `Oklahoma St`). Do not expand or correct them.
 
 6. Put the game's full original text in raw_text, so a human can check your work.
 

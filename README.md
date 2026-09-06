@@ -43,15 +43,15 @@ Every command defaults to the current season and week; pass `--season` /
 prediction last — the format the commissioner expects:
 
 ```
-Georgia Tech
-Michigan State
+TCU
+Virginia
 ...
-64 points
+52 points
 ```
 
 Team names are echoed **as the sheet wrote them**, so the list reads
-line-for-line against what was sent out. (ESPN calls them `Hawai'i` and
-`Ole Miss Rebels`; the sheet says `Hawaii` and `Ole Miss`.)
+line-for-line against what was sent out. (ESPN writes `San Jose State Spartans`
+where the sheet says `San Jose St`.)
 
 It refuses to print an incomplete list rather than quietly sending a short one.
 `--allow-missing` overrides that, marking gaps as `(no pick)`. Warnings go to
@@ -79,19 +79,19 @@ The pick sheet is written `Away @ Home (line)`, and the parenthetical attaches
 to **the favored team by position**:
 
 ```
-Colorado @ Georgia Tech (-6.5)      home favored
-UNLV (-2.5) @ Hawaii                away favored
-Arkansas St @ Memphis (11.5)        unsigned -> ambiguous
-Total Points - Furman @ Tennessee   tiebreaker, no spread
+North Carolina @ TCU (-7.5)             home favored
+Miami (FL) (-24.5) @ Stanford           away favored
+Jacksonville St @ North Dakota St (6.5) unsigned -> ambiguous
+Total Points - Akron @ Wake Forest      tiebreaker, no spread
 ```
 
 An unsigned number is never guessed. The importer proposes ESPN's direction for
 confirmation, and asks outright if ESPN has no line. Any game where the pool's
 line differs from ESPN's by more than 3 points is flagged as a likely misread.
 
-Team shorthand (`Tenn St`, `Miami (OH)`, `Ole Miss`) is matched against the
+Team shorthand (`Wash St`, `Miami (FL)`, `Oklahoma St`) is matched against the
 week's real games. A game only matches when *both* teams agree and no other game
-is close, so `Tenn St` cannot quietly become Tennessee. Anything unresolved is
+is close, so `Wash St` cannot quietly become Washington. Anything unresolved is
 asked once and remembered.
 
 If a parse needs hand-correcting, edit the cached JSON and re-import it:

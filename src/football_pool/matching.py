@@ -1,9 +1,9 @@
 """Match the commissioner's shorthand team names to ESPN games.
 
-The commissioner writes things like `Tenn St`, `Miami (OH)`, `Ole Miss` and
-`Arkansas St`. These have to resolve to specific ESPN games, and some of them
-are genuine traps: `Tenn St` (Tennessee State) sits one edit away from
-`Tennessee`, and both can appear on the same slate.
+The commissioner writes things like `Wash St`, `Miami (FL)` and `Oklahoma St`.
+These have to resolve to specific ESPN games, and some are genuine traps:
+`Wash St` (Washington State) sits one edit away from `Washington`, and the two
+can appear in the same game.
 
 Two things keep this safe. Matching is constrained to the games actually played
 that week, which shrinks the candidate set enormously; and a game only matches
@@ -73,8 +73,8 @@ def split_matchup(raw_text: str) -> tuple[str, str] | None:
     """Pull (away, home) out of a slate line, keeping the sheet's own wording.
 
     The commissioner's spelling is what goes back to them, so this preserves it
-    verbatim rather than substituting ESPN's -- which writes Hawaii as
-    "Hawai'i" and Ole Miss as "Ole Miss Rebels".
+    verbatim rather than substituting ESPN's -- which writes San Jose State as
+    "San Jose State Spartans", and some school names with diacritics.
     """
     if not raw_text:
         return None
@@ -122,7 +122,7 @@ class Team:
             value = raw.get(field_name)
             if value:
                 keys.add(normalize(value))
-        # "Georgia Tech Yellow Jackets" -> also index "georgia tech"
+        # "TCU Horned Frogs" -> also index "tcu"
         location, nickname = raw.get("location"), raw.get("name")
         if location and nickname:
             keys.add(normalize(f"{location} {nickname}"))
@@ -189,7 +189,7 @@ class WeekIndex:
         """Rank this week's games by how well they fit `away_name @ home_name`.
 
         Both teams must clear the floor for a game to be considered at all --
-        that is what stops `Tenn St @ Georgia` from landing on a Tennessee game.
+        that is what stops `Wash St` from landing on a Washington game.
         """
         candidates: list[GameCandidate] = []
         for espn_id, away_id, home_id in self.games:
