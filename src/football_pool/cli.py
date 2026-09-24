@@ -7,9 +7,9 @@ import sqlite3
 import sys
 from datetime import datetime, timezone
 
-from . import db, espn, report, slate_import
+from . import db, espn, margins, report, slate_import
 from .grading import Result, format_line, to_home_relative
-from .matching import WeekIndex
+from .matching import WeekIndex, normalize
 
 # How far the pool's line may drift from ESPN's before we flag it at import.
 LINE_DRIFT_THRESHOLD = 3.0
@@ -147,8 +147,8 @@ def _resolve_game(conn, index, game, slot, args, problems) -> dict | None:
             problems.append(f"skipped (no ESPN match): {game.raw_text}")
             return None
         # Remember the shorthand so this is never asked again.
-        db.save_alias(conn, _normalized(game.away), match.away.id)
-        db.save_alias(conn, _normalized(game.home), match.home.id)
+        db.save_alias(conn, normalize(game.away), match.away.id)
+        db.save_alias(conn, normalize(game.home), match.home.id)
 
     pool_line = None
     if not game.is_tiebreaker:
@@ -167,12 +167,6 @@ def _resolve_game(conn, index, game, slot, args, problems) -> dict | None:
         "home_text": game.home,
         "source_image": None,
     }
-
-
-def _normalized(name: str) -> str:
-    from .matching import normalize
-
-    return normalize(name)
 
 
 def _ask_which_game(index, game, candidates, args):
@@ -306,16 +300,42 @@ def _tiebreak_line(conn, season: int, week: int, rows) -> None:
     out(line)
 
 
+def _espn_columns(row) -> tuple[str, str]:
+    """The ESPN line and the edge the pool's line holds over it, as display text.
+
+    ESPN carries no line for some games and drops odds once one goes final, so
+    a stored spread is not guaranteed; '--' distinguishes that from 'even'.
+
+    A gap wider than LINE_DRIFT_THRESHOLD scores highest of anything on the
+    board while being, by the importer's own reckoning, most likely a misread
+    slate. It gets a '?' rather than a number to act on.
+    """
+    espn_spread = row["espn_spread"]
+    if espn_spread is None:
+        return "--", "--"
+    edge_text = margins.format_edge(
+        row["pool_line"], espn_spread, row["home_abbr"], row["away_abbr"]
+    )
+    if abs(row["pool_line"] - espn_spread) > LINE_DRIFT_THRESHOLD:
+        edge_text += "?"
+    return format_line(espn_spread, row["home_abbr"], row["away_abbr"]), edge_text
+
+
 def _print_slate(rows, season, week) -> None:
     out(f"{season} week {week}")
-    out(f"{'#':>3}  {'MATCHUP':<24} {'LINE':<12} {'PICK':<8} {'KICKOFF':<18} RESULT")
+    out(
+        f"{'#':>3}  {'MATCHUP':<24} {'LINE':<12} {'ESPN':<12} {'EDGE':<12} "
+        f"{'PICK':<8} {'KICKOFF':<18} {'SCORE':<8} RESULT"
+    )
     picked = 0
     for row in rows:
         matchup = f"{row['away_abbr']} @ {row['home_abbr']}"
         if row["is_tiebreaker"]:
-            line_text, pick_text, result = "TOTAL PTS", "", ""
+            line_text, espn_text, edge_text = "TOTAL PTS", "", ""
+            pick_text, result = "", ""
         else:
             line_text = format_line(row["pool_line"], row["home_abbr"], row["away_abbr"])
+            espn_text, edge_text = _espn_columns(row)
             pick_text = row["picked_abbr"] or ""
             picked += 1 if row["picked_side"] else 0
             if row["picked_side"]:
@@ -326,7 +346,8 @@ def _print_slate(rows, season, week) -> None:
             else:
                 result = ""
         out(
-            f"{row['slot']:>3}  {matchup:<24} {line_text:<12} {pick_text:<8} "
+            f"{row['slot']:>3}  {matchup:<24} {line_text:<12} {espn_text:<12} "
+            f"{edge_text:<12} {pick_text:<8} "
             f"{local_kickoff(row['kickoff_utc']):<18} {score_text(row):<8} {result}"
         )
     spread_games = sum(1 for r in rows if not r["is_tiebreaker"])
@@ -344,6 +365,38 @@ def cmd_picks(args) -> int:
     return 0
 
 
+SIDE_KEYS = {"a": "away", "away": "away", "h": "home", "home": "home"}
+
+EXACT, PREFIX, NO_MATCH = 2, 1, 0
+
+
+def _team_names(row, side: str) -> list[str]:
+    """Every name a team goes by in this game: abbreviation, the sheet's wording,
+    and ESPN's full name -- normalized for comparison."""
+    names = [row[f"{side}_abbr"], row[f"{side}_name"]]
+    if f"{side}_text" in row.keys():
+        names.append(row[f"{side}_text"])
+    return [normalize(n) for n in names if n]
+
+
+def _name_match(row, side: str, token: str) -> int:
+    """How well typed text names one team: exactly, by a whole-word prefix
+    ("kennesaw" for "Kennesaw State"), or not at all.
+
+    Deliberately NOT a substring test. Substring matching is what let a bare
+    "h" match the h in "Sam Houston Bearkats" and pick the wrong side.
+    """
+    needle = normalize(token)
+    if not needle:
+        return NO_MATCH
+    names = _team_names(row, side)
+    if needle in names:
+        return EXACT
+    if len(needle) >= 3 and any(n.startswith(needle + " ") for n in names):
+        return PREFIX
+    return NO_MATCH
+
+
 def _find_slot(rows, token: str):
     """Locate a slate game by slot number or by either team's name."""
     if token.isdigit():
@@ -351,31 +404,33 @@ def _find_slot(rows, token: str):
             if row["slot"] == int(token):
                 return row
         return None
-    needle = token.lower()
-    hits = [
-        row
-        for row in rows
-        if needle in (row["home_abbr"] or "").lower()
-        or needle in (row["away_abbr"] or "").lower()
-        or needle in (row["home_name"] or "").lower()
-        or needle in (row["away_name"] or "").lower()
-    ]
-    return hits[0] if len(hits) == 1 else None
+    # An exact name beats a prefix: "Louisiana" means Louisiana, not Louisiana Tech.
+    for level in (EXACT, PREFIX):
+        hits = [
+            row for row in rows
+            if level in (_name_match(row, "home", token), _name_match(row, "away", token))
+        ]
+        if hits:
+            return hits[0] if len(hits) == 1 else None
+    return None
 
 
 def _side_for(row, token: str) -> str | None:
-    needle = token.lower()
-    home = needle in (row["home_abbr"] or "").lower() or needle in (row["home_name"] or "").lower()
-    away = needle in (row["away_abbr"] or "").lower() or needle in (row["away_name"] or "").lower()
-    if home and not away:
+    """Which side of this game the typed text picks, or None if unclear.
+
+    The a/h shortcuts are checked first and always win -- they are the fast
+    path in the interactive walk, and must mean the same thing for every game.
+    """
+    key = token.strip().lower()
+    if key in SIDE_KEYS:
+        return SIDE_KEYS[key]
+    home = _name_match(row, "home", token)
+    away = _name_match(row, "away", token)
+    if home > away:
         return "home"
-    if away and not home:
+    if away > home:
         return "away"
-    if needle in ("h", "home"):
-        return "home"
-    if needle in ("a", "away"):
-        return "away"
-    return None
+    return None  # neither, or both equally (e.g. "Louisiana" in Louisiana @ Louisiana Tech)
 
 
 def cmd_pick(args) -> int:
