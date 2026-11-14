@@ -135,6 +135,17 @@ class TestSlateShowsEdge:
         assert "%" not in row
         assert "--" in row
 
+    def test_interactive_pick_prompt_shows_the_edge(self, drifted, monkeypatch, capsys):
+        """`fp pick -i` shows the same edge per game, so picking needs no slate run."""
+        prompts = []
+        monkeypatch.setattr("builtins.input", lambda p: prompts.append(p) or "s")
+        rows = [r for r in db.slate_for_week(drifted, SEASON, WEEK) if not r["is_tiebreaker"]]
+        cli._pick_interactive(drifted, rows, SEASON, WEEK)
+        ecu = next(p for p in prompts if "ARMY @ ECU" in p)
+        assert "(ECU -3.5) | EDGE ARMY " in ecu and "%" in ecu
+        assert "| EDGE even" in next(p for p in prompts if "ALA @ UGA" in p)
+        assert "| EDGE --" in next(p for p in prompts if "AUB @ TA&M" in p)
+
     def test_table_still_fits_a_terminal(self, drifted, capsys):
         """A new column must not silently wrap the table."""
         assert max(len(l) for l in self._slate_lines(drifted, capsys)) <= 120

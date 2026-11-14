@@ -473,10 +473,11 @@ def _pick_interactive(conn, rows, season, week) -> int:
     quit_early = False
     for row in rows:
         line_text = format_line(row["pool_line"], row["home_abbr"], row["away_abbr"])
+        _, edge_text = _espn_columns(row)
         current = f" [current: {row['picked_abbr']}]" if row["picked_side"] else ""
         prompt = (
             f"{row['slot']:>3}. {row['away_abbr']} @ {row['home_abbr']}  "
-            f"({line_text}){current}\n"
+            f"({line_text}) | EDGE {edge_text}{current}\n"
             f"     a={row['away_abbr']}  h={row['home_abbr']} > "
         )
         try:
