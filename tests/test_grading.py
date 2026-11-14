@@ -5,6 +5,8 @@ from football_pool.grading import (
     Side,
     cover,
     cover_margin,
+    crossed_margins,
+    drift_beneficiary,
     format_line,
     grade,
     pick_relative_line,
@@ -106,6 +108,81 @@ class TestFormatting:
 
     def test_trims_trailing_zeros(self):
         assert format_line(-7.0, "TCU", "UNC") == "TCU -7"
+
+
+class TestDriftBeneficiary:
+    """Which side a gap between the pool's line and the market's favors."""
+
+    def test_pool_line_favors_home_more_than_market(self):
+        # Pool: TROY -3.5, ESPN: TROY -3. Taking the away dog is a half point cheaper.
+        assert drift_beneficiary(-3.5, -3.0) is Side.AWAY
+
+    def test_pool_line_favors_away_more_than_market(self):
+        # Pool: LIB -5.5, ESPN: LIB -5. The home dog is the cheaper side.
+        assert drift_beneficiary(5.5, 5.0) is Side.HOME
+
+    def test_matching_lines_favor_neither(self):
+        assert drift_beneficiary(-7.5, -7.5) is None
+
+    def test_sign_flip(self):
+        # Pool has CMU -1.5, market has EMU -1.5: three points apart.
+        assert drift_beneficiary(-1.5, 1.5) is Side.AWAY
+
+
+class TestCrossedMargins:
+    """The integer margins a line gap actually moves up a rung.
+
+    A ticket's outcome is a loss, a push or a win; crossing an integer promotes
+    it by one. Both directions of promotion count.
+    """
+
+    def test_matching_lines_cross_nothing(self):
+        assert crossed_margins(-7.5, -7.5) == []
+
+    def test_matching_whole_lines_cross_nothing(self):
+        """The guard: without it, equal whole-number lines report their own
+        key number as a phantom crossing."""
+        assert crossed_margins(-3.0, -3.0) == []
+
+    def test_half_point_promotes_a_push_to_a_win(self):
+        # At market -7 a 7-point margin pushes; at the pool's -7.5 it wins.
+        assert crossed_margins(-7.5, -7.0) == [7]
+
+    def test_half_point_promotes_a_loss_to_a_push(self):
+        # At market -3.5 a 3-point margin loses; at the pool's -3 it pushes.
+        assert crossed_margins(-3.0, -3.5) == [3]
+
+    def test_half_point_off_a_trough(self):
+        assert crossed_margins(-15.5, -14.5) == [15]
+
+    def test_full_point_crosses_two_integers(self):
+        assert crossed_margins(-7.0, -6.0) == [6, 7]
+
+    def test_multi_point_gap(self):
+        assert crossed_margins(-10.0, -7.0) == [7, 8, 9, 10]
+
+    def test_set_is_symmetric_but_the_beneficiary_is_not(self):
+        """Swapping the arguments describes the same disagreement from the
+        other side: the same margins, the opposite team."""
+        assert crossed_margins(-7.0, -10.0) == crossed_margins(-10.0, -7.0)
+        assert drift_beneficiary(-7.0, -10.0) is not drift_beneficiary(-10.0, -7.0)
+
+    def test_sign_flip_spans_the_tie(self):
+        assert crossed_margins(-1.5, 1.5) == [-1, 0, 1]
+
+    def test_away_favored_lines_give_negative_margins(self):
+        """Away-favored lines have negative key numbers, where flooring instead
+        of ceiling picks the wrong integer."""
+        assert crossed_margins(5.5, 5.0) == [-5]
+
+    @pytest.mark.parametrize(
+        "pool,espn",
+        [(-3.5, -3.0), (-1.5, 1.5), (5.5, 5.0), (-20.0, -3.0), (0.0, -1.0)],
+    )
+    def test_always_ascending_and_unique(self, pool, espn):
+        got = crossed_margins(pool, espn)
+        assert got == sorted(got)
+        assert len(got) == len(set(got))
 
 
 class TestToHomeRelative:

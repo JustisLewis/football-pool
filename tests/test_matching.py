@@ -59,6 +59,15 @@ class TestWeekIndex:
         assert match is None
         assert len(candidates) > 1
 
+    @pytest.mark.parametrize("name", ["North Carolina State", "N Carolina St", "NC State"])
+    def test_nc_state_spelled_out_is_nc_state_not_unc(self, week1_2026, name):
+        """ESPN only knows the Wolfpack as "NC State"; the spelled-out name
+        also prefix-matches North Carolina, which plays the same week."""
+        index = WeekIndex(week1_2026)
+        match, candidates = index.best_match(name, "Virginia")
+        assert match is not None and match.away.abbreviation == "NCSU"
+        assert all(c.away.abbreviation != "UNC" for c in candidates)
+
     def test_unknown_team_matches_nothing(self, week1_2026):
         index = WeekIndex(week1_2026)
         match, candidates = index.best_match("Hogwarts", "Narnia")

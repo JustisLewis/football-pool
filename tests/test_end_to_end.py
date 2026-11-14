@@ -7,7 +7,7 @@ results worked out by hand in the comments.
 
 import pytest
 
-from football_pool import dashboard, db, report
+from football_pool import cli, dashboard, db, report
 from football_pool.espn import parse_games
 from football_pool.grading import Result
 
@@ -90,6 +90,54 @@ class TestPoolLineGoverns:
 
         # ESPN's own number is still on record for cross-checking.
         assert db.get_game(loaded, "401756902")["espn_spread"] == pytest.approx(-2.5)
+
+
+class TestSlateShowsEdge:
+    """`fp slate` puts the pool's line, ESPN's, and the value of the gap side
+    by side, so a line that moved after import is visible -- and ranked --
+    while picks are still open."""
+
+    @pytest.fixture
+    def drifted(self, loaded):
+        # ECU: pool -3.5 against a market that moved to -3.
+        loaded.execute(
+            "UPDATE games SET espn_spread = -3.0 WHERE espn_id = '401762471'"
+        )
+        # TA&M: ESPN carries no line at all.
+        loaded.execute(
+            "UPDATE games SET espn_spread = NULL WHERE espn_id = '401752724'"
+        )
+        loaded.commit()
+        return loaded
+
+    def _slate_lines(self, conn, capsys):
+        cli._print_slate(db.slate_for_week(conn, SEASON, WEEK), SEASON, WEEK)
+        return capsys.readouterr().out.splitlines()
+
+    def test_header_carries_both_new_columns(self, drifted, capsys):
+        header = self._slate_lines(drifted, capsys)[1]
+        assert "ESPN" in header and "EDGE" in header
+
+    def test_edge_names_the_side_the_pool_line_favors(self, drifted, capsys):
+        row = next(l for l in self._slate_lines(drifted, capsys) if "ARMY @ ECU" in l)
+        assert "ECU -3.5" in row  # the pool's line
+        assert "ECU -3" in row  # ESPN's
+        assert "ARMY" in row  # half a point cheaper on the dog
+        assert "%" in row  # and that half point is scored
+
+    def test_agreeing_lines_read_as_even(self, drifted, capsys):
+        row = next(l for l in self._slate_lines(drifted, capsys) if "ALA @ UGA" in l)
+        assert "even" in row
+
+    def test_missing_espn_line_is_not_reported_as_agreement(self, drifted, capsys):
+        row = next(l for l in self._slate_lines(drifted, capsys) if "AUB @ TA&M" in l)
+        assert "even" not in row
+        assert "%" not in row
+        assert "--" in row
+
+    def test_table_still_fits_a_terminal(self, drifted, capsys):
+        """A new column must not silently wrap the table."""
+        assert max(len(l) for l in self._slate_lines(drifted, capsys)) <= 120
 
 
 class TestSplits:

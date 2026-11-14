@@ -34,6 +34,13 @@ EXPANSIONS = {
     "miss": "mississippi",
 }
 
+# Whole names (after expansion) that ESPN writes completely differently. Folded
+# to ESPN's form so neither fuzzy matching nor the prefix rule gets a say --
+# "north carolina state" would otherwise prefix-match North Carolina.
+PHRASES = {
+    "north carolina state": "nc state",
+}
+
 # Names that must never be fuzzy-matched to each other, however close they look.
 # Each frozenset is a group of mutually exclusive programs.
 CONFUSABLE = [
@@ -98,7 +105,8 @@ def normalize(text: str) -> str:
     text = re.sub(r"[().,'`\-/]", " ", text)
     tokens = [t for t in text.split() if t]
     tokens = [EXPANSIONS.get(t, t) for t in tokens]
-    return " ".join(tokens)
+    text = " ".join(tokens)
+    return PHRASES.get(text, text)
 
 
 def _confusable_conflict(a: str, b: str) -> bool:

@@ -73,6 +73,23 @@ games are `VOID`, not losses.
 alongside as a cross-check — it flags likely misreads and resolves ambiguous
 lines — but it never overrides what the pool posted.
 
+`./fp slate` shows both, plus an `EDGE` column scoring the gap. Run `./fp sync`
+first to pull fresh spreads — lines move between importing a slate and making
+picks.
+
+`SHSU 7.9%` means the pool's line favors Sam Houston, and that in about 7.9% of
+games the pool's number and ESPN's produce different results — the rest of the
+time the gap is irrelevant and both land the same way. What makes a gap valuable
+is not how many points it is but which margins it spans: half a point across 3
+is worth six times a full point across 15, because 3 is where football scores
+land and 15 is not. A `?` marks a gap wide enough that the slate was probably
+misread; check it against the screenshot before trusting it.
+
+The percentage is an approximate frequency for ranking games against each other,
+not a win probability, and it says nothing about who covers — only that the
+price is good. See `margins.py` for how the numbers were computed and what they
+don't account for.
+
 ## Reading the slate
 
 The pick sheet is written `Away @ Home (line)`, and the parenthetical attaches
