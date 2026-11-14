@@ -244,3 +244,56 @@ class TestTiebreaker:
         html = dashboard.render(with_tiebreaker, SEASON, WEEK)
         assert "Tiebreaker" in html
         assert "off by <b>14</b>" in html
+
+    def _tiebreak_prompt(self, conn, monkeypatch, answer="s"):
+        prompts = []
+        monkeypatch.setattr("builtins.input", lambda p: prompts.append(p) or answer)
+        cli._prompt_tiebreaker(conn, SEASON, WEEK)
+        return prompts[0]
+
+    def test_prompt_shows_espn_over_under(self, with_tiebreaker, monkeypatch):
+        """The total to beat is in front of you when you type yours."""
+        with_tiebreaker.execute(
+            "UPDATE games SET espn_total = 47.5 WHERE espn_id = ?", (self.TIEBREAK_ID,)
+        )
+        monkeypatch.setattr(
+            "football_pool.espn.fetch_closing_total",
+            lambda *a, **k: pytest.fail("stored total should be used"),
+        )
+        assert "| ESPN O/U 47.5" in self._tiebreak_prompt(with_tiebreaker, monkeypatch)
+
+    def test_prompt_falls_back_to_core_api_and_stores_it(self, with_tiebreaker, monkeypatch):
+        monkeypatch.setattr("football_pool.espn.fetch_closing_total", lambda *a, **k: 51.0)
+        assert "| ESPN O/U 51" in self._tiebreak_prompt(with_tiebreaker, monkeypatch)
+        assert db.get_game(with_tiebreaker, self.TIEBREAK_ID)["espn_total"] == 51.0
+
+    def test_prompt_marks_a_missing_total(self, with_tiebreaker, monkeypatch):
+        monkeypatch.setattr("football_pool.espn.fetch_closing_total", lambda *a, **k: None)
+        assert "| ESPN O/U --" in self._tiebreak_prompt(with_tiebreaker, monkeypatch)
+
+
+def test_scoreboard_over_under_is_parsed_and_kept(db_conn, week1_2026):
+    games = parse_games(week1_2026)
+    totals = {g["espn_id"]: g["espn_total"] for g in games}
+    assert 46.5 in totals.values() and 55.5 in totals.values()
+
+    db.upsert_games(db_conn, games)
+    eid = next(k for k, v in totals.items() if v == 46.5)
+    # A later fetch without odds (game went final) must not erase it.
+    stripped = [{**g, "espn_spread": None, "espn_total": None} for g in games]
+    db.upsert_games(db_conn, stripped)
+    assert db.get_game(db_conn, eid)["espn_total"] == 46.5
+
+
+def test_existing_database_gains_the_total_column(tmp_path):
+    import sqlite3
+
+    path = tmp_path / "old.db"
+    old = sqlite3.connect(path)
+    old.execute("CREATE TABLE games (espn_id TEXT PRIMARY KEY, season INTEGER NOT NULL,"
+                " week INTEGER NOT NULL, espn_spread REAL)")
+    old.commit()
+    old.close()
+    conn = db.connect(path)
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(games)")}
+    assert "espn_total" in cols

@@ -111,6 +111,21 @@ def _pick_odds(odds_items: list[dict]) -> dict | None:
     return (settled or usable)[0]
 
 
+def _pick_total(odds_items: list[dict], chosen: dict | None) -> float | None:
+    """The over/under, from the same entry as the spread when it has one.
+
+    Falls back to any settled entry carrying a total, since a book can post a
+    total without a spread (and vice versa).
+    """
+    if chosen and chosen.get("overUnder") is not None:
+        return chosen["overUnder"]
+    usable = [o for o in odds_items or [] if o.get("overUnder") is not None]
+    if not usable:
+        return None
+    settled = [o for o in usable if "live" not in _provider_name(o).lower()]
+    return (settled or usable)[0]["overUnder"]
+
+
 def _provider_name(odds: dict) -> str:
     provider = odds.get("provider") or {}
     return provider.get("name") or ""
@@ -149,6 +164,9 @@ def parse_games(payload: dict) -> list[dict]:
                 # ESPN signs `spread` relative to the home team, which is the
                 # same convention used throughout this project.
                 "espn_spread": odds.get("spread") if odds else None,
+                # The book's projected combined score; what the tiebreaker
+                # prediction is up against.
+                "espn_total": _pick_total(comp.get("odds") or [], odds),
             }
         )
     return games
@@ -161,18 +179,28 @@ def _int_or_none(value) -> int | None:
         return None
 
 
+def _fetch_core_odds(espn_id: str, pause: float) -> list[dict]:
+    time.sleep(pause)  # be polite; this is called in a loop
+    try:
+        payload = _get(CORE_ODDS.format(eid=espn_id))
+    except EspnError:
+        return []
+    return payload.get("items") or []
+
+
 def fetch_closing_line(espn_id: str, pause: float = 0.3) -> float | None:
     """Home-relative closing line for one game, or None if ESPN has none.
 
     This survives the game going final, so it works as a late cross-check.
     """
-    time.sleep(pause)  # be polite; this is called in a loop
-    try:
-        payload = _get(CORE_ODDS.format(eid=espn_id))
-    except EspnError:
-        return None
-    odds = _pick_odds(payload.get("items") or [])
+    odds = _pick_odds(_fetch_core_odds(espn_id, pause))
     return odds.get("spread") if odds else None
+
+
+def fetch_closing_total(espn_id: str, pause: float = 0.3) -> float | None:
+    """Closing over/under for one game, or None if ESPN has none."""
+    items = _fetch_core_odds(espn_id, pause)
+    return _pick_total(items, _pick_odds(items))
 
 
 def teams_in_payload(payload: dict) -> list[dict]:

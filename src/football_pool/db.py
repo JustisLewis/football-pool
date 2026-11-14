@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS games (
     home_score   INTEGER,
     away_score   INTEGER,
     espn_spread  REAL,
+    espn_total   REAL,              -- over/under, for the tiebreaker
     updated_at   TEXT
 );
 CREATE INDEX IF NOT EXISTS games_week ON games (season, week);
@@ -108,6 +109,9 @@ def _migrate(conn: sqlite3.Connection) -> None:
         conn.execute(f"ALTER TABLE slate_games ADD COLUMN {column} TEXT")
     if added:
         _backfill_matchup_text(conn)
+    game_columns = {r["name"] for r in conn.execute("PRAGMA table_info(games)")}
+    if "espn_total" not in game_columns:
+        conn.execute("ALTER TABLE games ADD COLUMN espn_total REAL")
     conn.commit()
 
 
@@ -136,7 +140,7 @@ def _backfill_matchup_text(conn: sqlite3.Connection) -> None:
 def upsert_games(conn: sqlite3.Connection, games: list[dict]) -> None:
     """Insert or update games from an ESPN fetch.
 
-    Uses COALESCE on the odds column so a fetch that returns no line (ESPN drops
+    Uses COALESCE on the odds columns so a fetch that returns no line (ESPN drops
     odds once a game goes final) never erases a line we already stored.
     """
     conn.executemany(
@@ -144,11 +148,11 @@ def upsert_games(conn: sqlite3.Connection, games: list[dict]) -> None:
         INSERT INTO games (
             espn_id, season, week, kickoff_utc, home_id, home_abbr, home_name,
             away_id, away_abbr, away_name, neutral_site, status,
-            home_score, away_score, espn_spread, updated_at
+            home_score, away_score, espn_spread, espn_total, updated_at
         ) VALUES (
             :espn_id, :season, :week, :kickoff_utc, :home_id, :home_abbr, :home_name,
             :away_id, :away_abbr, :away_name, :neutral_site, :status,
-            :home_score, :away_score, :espn_spread, datetime('now')
+            :home_score, :away_score, :espn_spread, :espn_total, datetime('now')
         )
         ON CONFLICT (espn_id) DO UPDATE SET
             kickoff_utc = excluded.kickoff_utc,
@@ -156,6 +160,7 @@ def upsert_games(conn: sqlite3.Connection, games: list[dict]) -> None:
             home_score  = excluded.home_score,
             away_score  = excluded.away_score,
             espn_spread = COALESCE(excluded.espn_spread, games.espn_spread),
+            espn_total  = COALESCE(excluded.espn_total, games.espn_total),
             updated_at  = datetime('now')
         """,
         games,
@@ -215,7 +220,7 @@ def slate_for_week(conn: sqlite3.Connection, season: int, week: int) -> list[sql
         """
         SELECT s.*, g.home_abbr, g.home_name, g.away_abbr, g.away_name,
                g.kickoff_utc, g.status, g.home_score, g.away_score,
-               g.espn_spread, g.neutral_site,
+               g.espn_spread, g.espn_total, g.neutral_site,
                p.picked_side, p.picked_abbr, p.line, p.note
         FROM slate_games s
         JOIN games g USING (espn_id)

@@ -247,6 +247,20 @@ def _espn_spread(conn, espn_id: str) -> float | None:
     return line
 
 
+def _espn_total(conn, espn_id: str) -> float | None:
+    """ESPN's over/under, from the scoreboard if present or the core API if not."""
+    row = db.get_game(conn, espn_id)
+    if row and row["espn_total"] is not None:
+        return row["espn_total"]
+    total = espn.fetch_closing_total(espn_id, pause=0)
+    if total is not None:
+        conn.execute(
+            "UPDATE games SET espn_total = ? WHERE espn_id = ?", (total, espn_id)
+        )
+        conn.commit()
+    return total
+
+
 def _print_import_table(conn, rows, season, week) -> None:
     out(f"{'#':>3}  {'MATCHUP':<24} {'POOL LINE':<12} {'ESPN':<12} {'KICKOFF'}")
     for row in rows:
@@ -520,8 +534,11 @@ def _prompt_tiebreaker(conn, season: int, week: int) -> None:
     row = rows[0]
     existing = db.get_tiebreaker(conn, season, week)
     current = f" [current: {existing['predicted_total']}]" if existing else ""
+    espn_ou = _espn_total(conn, row["espn_id"])
+    espn_text = f"{espn_ou:g}" if espn_ou is not None else "--"
     prompt = (
-        f"\n  Tiebreaker: {row['away_abbr']} @ {row['home_abbr']}{current}\n"
+        f"\n  Tiebreaker: {row['away_abbr']} @ {row['home_abbr']}  "
+        f"| ESPN O/U {espn_text}{current}\n"
         f"     total points > "
     )
     while True:
